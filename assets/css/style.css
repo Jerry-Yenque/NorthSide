@@ -1013,7 +1013,16 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .gallery .grid-list { grid-template-columns: 1fr 1fr; }
 
-
+  /* clases agregadas para galería*/
+  .grid-item-g {
+    border-radius: 16px;
+    width: 22.5vw;
+    height: 22.5vw;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px 3px #ccc;
+  }
+  /* fin clases agregadas para galería*/
 
   /**
    * APPOINTMENT
