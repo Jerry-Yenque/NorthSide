@@ -25,7 +25,8 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
+	<!---Flickity--->
+	<link rel="stylesheet" href="./assets/css/flickity.css" media="screen">
   <!-- 
     - google font link
   -->
@@ -138,6 +139,7 @@
             <li class="navbar-item">
               <a href="#gallery" class="navbar-link" data-nav-link>Galería</a>
             </li>
+            
 
             <!-- <li class="navbar-item">
               <a href="#appointment" class="navbar-link" data-nav-link>Appointment</a>
@@ -242,7 +244,7 @@
 
                 <div class="card-icon">
                   <!-- <i class="flaticon-shampoo"></i> -->
-                  <img src="/assets/images/tattoo-machine.png" alt="Tattoo Machine Icon" width="80">
+                  <img src="./assets/images/tattoo-machine.png" alt="Tattoo Machine Icon" width="80">
                 </div>
 
                 <h3 class="h3">
@@ -265,7 +267,7 @@
 
                 <div class="card-icon">
                   <!-- <i class="flaticon-hot-stone"></i> -->
-                  <img src="/assets/images/tongue.png" alt="tongue piercing" width="80">
+                  <img src="./assets/images/tongue.png" alt="tongue piercing" width="80">
                 </div>
 
                 <h3 class="h3">
@@ -379,7 +381,9 @@
               <li>
                 <button class="filter-btn active" data-filter-btn="all">
                   <div class="btn-icon">
-                    <i class="flaticon-beauty-salon" aria-hidden="true"></i>
+                    <!-- <i class="flaticon-beauty-salon" aria-hidden="true"></i> -->
+                    <img src="./assets/images/iconopeluqueria.png" alt="hairCut icon" width="64" style="margin-inline: auto;">
+
                   </div>
 
                   <p class="btn-text">All Pricing</p>
@@ -390,7 +394,7 @@
                 <button class="filter-btn" data-filter-btn="hair-cuts">
                   <div class="btn-icon">
                     <!-- <i class="flaticon-relax" aria-hidden="true"></i> -->
-                    <img src="/assets/images/hair-cutting.png" alt="hairCut icon" width="64" style="margin-inline: auto;">
+                    <img src="./assets/images/hair-cutting.png" alt="hairCut icon" width="64" style="margin-inline: auto;">
 
                   </div>
 
@@ -402,7 +406,7 @@
                 <button class="filter-btn" data-filter-btn="tattoos">
                   <div class="btn-icon">
                     <!-- <i class="flaticon-massage" aria-hidden="true"></i> -->
-                    <img src="/assets/images/skull.png" alt="Skull Icon" width="64" style="margin-inline: auto;">
+                    <img src="./assets/images/skull.png" alt="Skull Icon" width="64" style="margin-inline: auto;">
                   </div>
 
                   <p class="btn-text">Tattoo</p>
@@ -413,7 +417,7 @@
                 <button class="filter-btn" data-filter-btn="piercings">
                   <div class="btn-icon">
                     <!-- <i class="flaticon-spa" aria-hidden="true"></i> -->
-                    <img src="assets/images/piercing.png" alt="Piercing Icon" width="64" style="margin-inline: auto;">
+                    <img src="./assets/images/piercing.png" alt="Piercing Icon" width="64" style="margin-inline: auto;">
                   </div>
 
                   <p class="btn-text">Piercings</p>
@@ -444,11 +448,12 @@
 
             <ul class="grid-list">
 
+ 
               <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
+                    <img src="./assets/img/blue-out.png" width="90" height="90" alt="Hair Cutting & Fitting"
                       class="img-cover">
                   </figure>
 
@@ -458,54 +463,16 @@
                     <p class="card-text">15-20 minutos</p>
                   </div>
 
-                  <data class="card-price" value="25">s/25</data>
+                  <data class="card-price" value="25">S/25</data>
 
                 </div>
               </li>
 
-              <li data-filter="hair-cuts">
+            <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-2.jpg" width="90" height="90" alt="Shaving & Facial"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Skin Fade</h3>
-
-                    <p class="card-text">30-40 minutos</p>
-                  </div>
-
-                  <data class="card-price" value="25">s/25</data>
-
-                </div>
-              </li>
-
-              <li data-filter="hair-cuts">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Corte con Detalle</h3>
-
-                    <p class="card-text">30-40 minutos</p>
-                  </div>
-
-                  <data class="card-price" value="25">s/25</data>
-
-                </div>
-              </li>
-
-              <li data-filter="hair-cuts">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
+                    <img src="./assets/img/corte-barba.png" width="90" height="90" alt="Shaving & Facial"
                       class="img-cover">
                   </figure>
 
@@ -515,7 +482,7 @@
                     <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="30">s/30</data>
+                  <data class="card-price" value="30">S/30</data>
 
                 </div>
               </li>
@@ -524,7 +491,7 @@
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
+                    <img src="./assets/img/ombligo-piercing.png" width="90" height="90" alt="Hair Color & Wash"
                       class="img-cover">
                   </figure>
 
@@ -534,64 +501,49 @@
                     <p class="card-text">10-15 minutos</p>
                   </div>
 
-                  <data class="card-price" value="30">s/30</data>
+                  <data class="card-price" value="30">S/30</data>
 
                 </div>
               </li>
 
-              <li data-filter="piercings">
+           
+
+              <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-6.jpg" width="90" height="90" alt="Facial & Face Wash"
+                    <img src="./assets/img/corte-detalle.png" width="90" height="90" alt="Facial & Face Wash"
                       class="img-cover">
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Piercing Oreja</h3>
-
-                    <p class="card-text">15-20 minutos</p>
-                  </div>
-
-                  <data class="card-price" value="30">s/30</data>
-
-                </div>
-              </li>
-
-              <li data-filter="tattoos">
-                <div class="pricing-card">
-
-                  <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-7.jpg" width="90" height="90" alt="Backbone Massage"
-                      class="img-cover">
-                  </figure>
-
-                  <div class="wrapper">
-                    <h3 class="h3 card-title">Tattoo 15cm</h3>
+                    <h3 class="h3 card-title">Corte con detalle</h3>
 
                     <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="80">s/80</data>
+                  <data class="card-price" value="25">S/25</data>
 
                 </div>
               </li>
 
-              <li data-filter="tattoos">
+         
+
+              <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-8.jpg" width="90" height="90" alt="Meditation & Massage"
+                    <img src="./assets/img/skin-fade.png" width="90" height="90" alt="Meditation & Massage"
                       class="img-cover">
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Tattoo 30cm</h3>
+                    <h3 class="h3 card-title">Skin Fade</h3>
 
-                    <p class="card-text">40-60 minutos</p>
+                    <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="150">s/150</data>
+                  <data class="card-price" value="25">S/25</data>
 
                 </div>
               </li>
@@ -612,7 +564,38 @@
       -->
 
       <section class="section gallery" id="gallery" aria-label="photo gallery">
-        <div class="container">
+        <div id="Gallery" class="container" data-aos="fade-right">
+          <h2>Galería.</h2>
+          
+          <a href="galeria.html" class="btn has-before">
+            <span class="span"> Nuestra galería</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+          <br>
+              
+              <div class="gallery js-flickity">
+            <div class="gallery-cell">
+              <img src="./assets/img/img0.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img/img1.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img/img2.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img/img3.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img/img4.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img/img5.jpg" class="grid-item-g">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container">
 
           <div class="title-wrapper">
 
@@ -730,10 +713,33 @@
 
           </ul>
 
-        </div>
+        </div> -->
+
+
+
       </section>
 
 
+      <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing"
+      style="background-image: url('./assets/images/pricing-bg.jpg')">
+      <div class="container">
+
+        <h2 class="h2 section-title text-center">Sobre Nosotros</h2>
+
+        <p class="section-text text-center">
+          Descubre nuestros excelentes precios para tu estilo único en Northside Studio. ¡Ponte en contacto con nosotros hoy mismo!
+        </p>
+
+        <div class="pricing-tab-container">
+
+          <ul class="tab-filter">
+
+      
+
+        </div>
+
+      </div>
+    </section>
 
 
 
@@ -829,7 +835,7 @@
             <span class="span">Barbería, Tattoo y Perforaciones</span>
           </a>
 
-          <form action="" class="input-wrapper">
+          <!-- <form action="" class="input-wrapper">
 
             <input type="email" name="email_address" placeholder="Ingresa tu Email" required class="email-field">
 
@@ -839,7 +845,7 @@
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
 
-          </form>
+          </form> -->
 
         </div>
 
@@ -1023,11 +1029,14 @@
   -->
   <script src="./assets/js/script.js" defer></script>
 
+
+	<script src="./assets/js/flickity.pkgd.min.js"></script>
   <!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
 
 </body>
 

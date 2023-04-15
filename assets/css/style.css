@@ -100,8 +100,11 @@
 *,
 *::before,
 *::after {
+  
   margin: 0;
   padding: 0;
+  text-align: center;
+
   box-sizing: border-box;
 }
 
@@ -544,6 +547,8 @@ body {
 }
 
 .pricing-card .card-banner {
+  width: 90px; /*Esto es nuevo cagon*/
+  height: 90px; 
   border-radius: 50%;
   overflow: hidden;
 }
@@ -616,7 +621,29 @@ body {
   color: var(--white);
 }
 
+/*--------------------Gallery--------------------*/
+#Gallery {
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+#Gallery-Content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: space-evenly;
+  align-content: space-evenly;
+  grid-gap: 5vw;
+  height: auto;
+}
+
+.grid-item-g {
+  border-radius: 16px;
+  width: 22.5vw;
+  height: 22.5vw;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 1px 1px 2px 3px #ccc;
+}
 
 
 
@@ -1395,4 +1422,58 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .back-top-btn { padding: 15px; }
 
+}
+
+
+
+
+
+article, aside, details, figcaption, figure, hgroup, menu,  section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    width: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.img-vs1 {
+    width: 20%;
+    height: 35%;
+}
+.img-vs2 {
+    width: 20%;
+height: 35%;
+}
+.img-width {
+    width: 33.3333333333333333333333333333333333333333%;
+    height: 30%;
+}
+.img img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+  
 }
