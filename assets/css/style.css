@@ -1502,29 +1502,28 @@ display: inline-block;
   -o-transition: background-position 200ms ease;
   transition: background-position 200ms ease;
   display: block;
-  width: 35px;
-  height: 30px;
-  background: url(../fonts/social-img-spry-assets2.gif) 0 0 no-repeat;
+  width: 37px;
+  height: 35px;
+  background: url(../fonts/social-img-spry-assets3.gif) 0 0 no-repeat;
 
 
 }
-.social .social--facebook a { background-position: -3px 0;  opacity: 1;}
-.social .social--facebook a:hover{background-position:-3px -39px ; opacity: 1;}
+.social .social--facebook a { background-position: 0px 0; }
+.social .social--facebook a:hover{background-position:-0px -38px}
 
-.social .social--twitter a { background-position: -40px 0;;  opacity: 1 }
-.social .social--twitter a:hover{background-position:-40px -39px;  opacity: 1}
+.social .social--tiktok a { background-position: -39px 0;}
+.social .social--tiktok a:hover{background-position:-39px -39px; }
 
-.social .social--linkedin a { background-position: -79px 0; }
-.social .social--linkedin a:hover{background-position:-79px -39px}
+.social .social--instagram a { background-position: -76px 0; }
+.social .social--instagram a:hover{background-position:-76px -39px}
 
-.social .social--pinterest a { background-position: -117px 0; }
-.social .social--pinterest a:hover{background-position:-117px -39px}
+.social .social--whatshap a { background-position: -117px 0; }
+.social .social--whatshap a:hover{background-position:-117px -39px}
 
-.social .social--instagram a { background-position: -155px 0; }
-.social .social--instagram a:hover{background-position:-155px -39px}
+
 ul.social span {
    opacity: 1;
-  display: none;
+  display: none
 }
 .social-wrapper {
   display: inline-block; /* Para que el contenedor se ajuste al tamaño de los elementos */
