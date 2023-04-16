@@ -1473,3 +1473,83 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   .back-top-btn { padding: 15px; }
 
 }
+
+
+
+
+/* Codigo para que salgan las redes sociales sobre la fot donde se pasa el mmouse */ 
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+ul.social { 
+list-style: none; 
+margin: 10  xpx 0;
+padding-left:0;
+}
+.social li { 
+line-height: 1;
+display: inline-block;
+  margin-right: 10px;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.social a {
+  -webkit-transition: background-position 200ms ease;
+  -moz-transition: background-position 200ms ease;
+  -o-transition: background-position 200ms ease;
+  transition: background-position 200ms ease;
+  display: block;
+  width: 35px;
+  height: 30px;
+  background: url(../fonts/social-img-spry-assets2.gif) 0 0 no-repeat;
+
+}
+.social .social--facebook a { background-position: -3px 0; }
+.social .social--facebook a:hover{background-position:-3px -39px}
+
+.social .social--twitter a { background-position: -40px 0; }
+.social .social--twitter a:hover{background-position:-40px -39px}
+
+.social .social--linkedin a { background-position: -79px 0; }
+.social .social--linkedin a:hover{background-position:-79px -39px}
+
+.social .social--pinterest a { background-position: -117px 0; }
+.social .social--pinterest a:hover{background-position:-117px -39px}
+
+.social .social--instagram a { background-position: -155px 0; }
+.social .social--instagram a:hover{background-position:-155px -39px}
+ul.social span {
+  display: none;
+}
+.social-wrapper {
+  display: inline-block; /* Para que el contenedor se ajuste al tamaño de los elementos */
+  background-color: #f0f0f0; /* Color de fondo del rectángulo */
+  border: 1px solid #ccc; /* Borde del rectángulo */
+  padding: 0; /* Elimina el espacio entre el borde y los elementos */
+  margin: 0; /* Elimina el espacio en la parte superior e inferior del contenedor */
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-wrapper.visible {
+  opacity: 1;
+}
+
+.image-container:hover .social-wrapper {
+  opacity: 1;
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
