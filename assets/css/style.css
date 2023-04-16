@@ -1352,7 +1352,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   .footer .logo {
     padding: 60px 70px;
     border-block-end: none;
-    border-inline-end: 1px solid var(--white_10);
+    border-inline-end: 1px solid var(--white_10); 
   }
 
   .footer .input-wrapper {
@@ -1485,7 +1485,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 }
 ul.social { 
 list-style: none; 
-margin: 10  xpx 0;
+margin: 10px 0;
 padding-left:0;
 }
 .social li { 
@@ -1506,12 +1506,13 @@ display: inline-block;
   height: 30px;
   background: url(../fonts/social-img-spry-assets2.gif) 0 0 no-repeat;
 
-}
-.social .social--facebook a { background-position: -3px 0; }
-.social .social--facebook a:hover{background-position:-3px -39px}
 
-.social .social--twitter a { background-position: -40px 0; }
-.social .social--twitter a:hover{background-position:-40px -39px}
+}
+.social .social--facebook a { background-position: -3px 0;  opacity: 1;}
+.social .social--facebook a:hover{background-position:-3px -39px ; opacity: 1;}
+
+.social .social--twitter a { background-position: -40px 0;;  opacity: 1 }
+.social .social--twitter a:hover{background-position:-40px -39px;  opacity: 1}
 
 .social .social--linkedin a { background-position: -79px 0; }
 .social .social--linkedin a:hover{background-position:-79px -39px}
@@ -1522,12 +1523,13 @@ display: inline-block;
 .social .social--instagram a { background-position: -155px 0; }
 .social .social--instagram a:hover{background-position:-155px -39px}
 ul.social span {
+   opacity: 1;
   display: none;
 }
 .social-wrapper {
   display: inline-block; /* Para que el contenedor se ajuste al tamaño de los elementos */
-  background-color: #f0f0f0; /* Color de fondo del rectángulo */
-  border: 1px solid #ccc; /* Borde del rectángulo */
+  background-color: #00000067; /* Color de fondo del rectángulo */
+  border: 1px solid #000000; /* Borde del rectángulo */
   padding: 0; /* Elimina el espacio entre el borde y los elementos */
   margin: 0; /* Elimina el espacio en la parte superior e inferior del contenedor */
 
@@ -1535,8 +1537,9 @@ ul.social span {
   bottom: 0;
   left: 0;
   width: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0  ;
+  
+  transition: opacity 0.5s ease-in-out;
 }
 
 .social-wrapper.visible {
@@ -1547,9 +1550,20 @@ ul.social span {
   opacity: 1;
 }
 
+
 .social {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+
+
+.image-container img {
+  transition: transform 0.2s ease-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.02111);
+}
+
