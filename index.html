@@ -26,6 +26,11 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!--
+    -Flickity
+  -->
+  <link rel="stylesheet" href="./assets/css/flickity.css" media="screen">
+  
   <!-- 
     - google font link
   -->
@@ -40,6 +45,12 @@
   -->
   <link rel="stylesheet" href="assets/css/flaticon.min.css">
 
+  <!--
+    - font awesome
+  -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
   <!-- 
     - preload images
   -->
@@ -52,7 +63,19 @@
   <!-- 
     - #HEADER
   -->
-
+  <div class="social-nav">
+    <ul>
+        <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li> 
+        <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+        <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
+        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    </ul>
+  </div>
+  
   <header class="header">
 
     <div class="header-top">
@@ -62,7 +85,7 @@
 
           <li class="header-top-item">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
+            
             <p class="item-title">Llámanos :</p>
 
             <a href="tel:01234567895" class="item-link">974 190 538</a>
@@ -242,7 +265,7 @@
 
                 <div class="card-icon">
                   <!-- <i class="flaticon-shampoo"></i> -->
-                  <img src="/assets/images/tattoo-machine.png" alt="Tattoo Machine Icon" width="80">
+                  <img src="assets/images/tattoo-machine.png" alt="Tattoo Machine Icon" width="80">
                 </div>
 
                 <h3 class="h3">
@@ -265,7 +288,7 @@
 
                 <div class="card-icon">
                   <!-- <i class="flaticon-hot-stone"></i> -->
-                  <img src="/assets/images/tongue.png" alt="tongue piercing" width="80">
+                  <img src="assets/images/tongue.png" alt="tongue piercing" width="80">
                 </div>
 
                 <h3 class="h3">
@@ -390,7 +413,7 @@
                 <button class="filter-btn" data-filter-btn="hair-cuts">
                   <div class="btn-icon">
                     <!-- <i class="flaticon-relax" aria-hidden="true"></i> -->
-                    <img src="/assets/images/hair-cutting.png" alt="hairCut icon" width="64" style="margin-inline: auto;">
+                    <img src="assets/images/hair-cutting.png" alt="hairCut icon" width="64" style="margin-inline: auto;">
 
                   </div>
 
@@ -402,7 +425,7 @@
                 <button class="filter-btn" data-filter-btn="tattoos">
                   <div class="btn-icon">
                     <!-- <i class="flaticon-massage" aria-hidden="true"></i> -->
-                    <img src="/assets/images/skull.png" alt="Skull Icon" width="64" style="margin-inline: auto;">
+                    <img src="assets/images/skull.png" alt="Skull Icon" width="64" style="margin-inline: auto;">
                   </div>
 
                   <p class="btn-text">Tattoo</p>
@@ -448,8 +471,8 @@
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
-                      class="img-cover">
+                    <img src="./assets/images/blue-out.png" width="90" height="90" alt="Hair Cutting & Fitting"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
@@ -467,8 +490,8 @@
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-2.jpg" width="90" height="90" alt="Shaving & Facial"
-                      class="img-cover">
+                    <img src="./assets/images/skin-fade.png" width="90" height="90" alt="Shaving & Facial"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
@@ -486,8 +509,8 @@
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
-                      class="img-cover">
+                    <img src="./assets/images/corte-detalle.png" width="90" height="90" alt="Corte y Barba"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
@@ -505,8 +528,8 @@
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
-                      class="img-cover">
+                    <img src="./assets/images/corte-barba.png" width="90" height="90" alt="Body Massage" style="height: 90px;"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
@@ -524,8 +547,8 @@
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
-                      class="img-cover">
+                    <img src="./assets/images/ombligo-piercing.png" width="90" height="90" alt="Beauty & Spa"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
@@ -539,7 +562,7 @@
                 </div>
               </li>
 
-              <li data-filter="piercings">
+              <!-- <li data-filter="piercings">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -594,7 +617,7 @@
                   <data class="card-price" value="150">s/150</data>
 
                 </div>
-              </li>
+              </li> -->
 
             </ul>
 
@@ -634,7 +657,28 @@
 
           </div>
 
-          <ul class="grid-list">
+          <div class="gallery js-flickity">
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img1.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img1.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img2.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img3.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img4.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img5.jpg" class="grid-item-g">
+            </div>
+          </div>
+
+          <!-- <ul class="grid-list">
 
             <li>
               <div class="gallery-card">
@@ -728,7 +772,7 @@
               </div>
             </li>
 
-          </ul>
+          </ul> -->
 
         </div>
       </section>
@@ -1023,6 +1067,11 @@
   -->
   <script src="./assets/js/script.js" defer></script>
 
+  <!--
+    - flickity js
+  -->
+  <script src="./assets/js/flickity.pkgd.min.js"></script>
+  
   <!-- 
     - ionicon link
   -->
