@@ -940,18 +940,22 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 } 
 
 .social-nav li:nth-child(1) a {
-  background-color: #4267B2;
+  background-color: #0a0a0a;
 }
 
 .social-nav li:nth-child(2) a {
-  background-color: #E1306C;
+  background-color: #4267B2;
 }
 
 .social-nav li:nth-child(3) a {
-  background-color: #ff0000;
+  background-color: #E1306C;
 }
 
 .social-nav li:nth-child(4) a {
+  background-color: #ff0000;
+}
+
+.social-nav li:nth-child(5) a {
   background-color: #075E54;
 }
 
