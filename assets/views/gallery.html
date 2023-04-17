@@ -25,6 +25,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gallery.css">
 
   <!--
     -Flickity
@@ -58,12 +59,12 @@
 
 </head>
 
-<body id="top" style="height: 300vh;">
+<body id="top" style="height: 300vh; background-color: black;">
 
     <!-- 
     - #HEADER
   -->
-  <div class="social-nav">
+  <div class="social-nav" hidden>
     <ul>
       <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
         <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
@@ -154,28 +155,24 @@
           <ul class="navbar-list">
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Inicio</a>
+              <a href="../../index.html" class="navbar-link" data-nav-link>Regresar</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Servicios</a>
+              <a href="#" class="navbar-link" data-nav-link>Cortes</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Precios</a>
+              <a href="#tattoo" class="navbar-link" data-nav-link>Tattoo</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Galería</a>
+              <a href="#piercing" class="navbar-link" data-nav-link>Perforaciones</a>
             </li>
 
             <!-- <li class="navbar-item">
-              <a href="#appointment" class="navbar-link" data-nav-link>Appointment</a>
-            </li> -->
-
-            <li class="navbar-item">
               <a href="#" class="navbar-link" data-nav-link>Nuestro Equipo</a>
-            </li>
+            </li> -->
 
           </ul>
         </nav>
@@ -183,17 +180,266 @@
         <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
-
-        <!-- <a href="#" class="btn has-before">
-          <span class="span">Appointment</span>
-
-          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a> -->
-
       </div>
     </div>
-
   </header>
+
+  <main>
+    <section class="section" style="background-image: url('../images/footer-bg.png'); background-position: center; background-size: cover;">
+      <div class="container" style="margin-inline: 0; max-width: none;">
+        <h2 class="section-title text-center" style="color: white; margin-bottom: 40px;">Galeria de Cortes</h2>
+        <div class="img">
+          <img src="../images/blue-out.png" alt="" class="img-vs1 i8">
+          <img src="../images/skin-fade.png" alt="" class="img-vs1 i9">
+          <img src="../images/blue-out.png" alt="" class="img-vs1 i10">
+          <img src="../images/skin-fade.png" alt="" class="img-vs1 i12">
+          <img src="../images/blue-out.png" alt="" class="img-vs1 i13">
+          <img src="../img-gallery/gallery-1.jpg" alt="" class="img-width iw11">
+          <img src="../img-gallery/gallery-2.jpg" alt="" class="img-width iw14">
+          <img src="../img-gallery/gallery-1.jpg" alt="" class="img-width iw15">
+          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        </div>
+      </div>
+      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+    </section>
+
+    <section class="section tattoo" id="tattoo" style="background-color: white;">
+      <div class="container" style="margin-inline: 0; width: 100%; max-width: none;">
+        <h2 class="section-title text-center" style="margin-bottom: 40px;">Galeria de Tattoo</h2>
+        <div class="img" style="width: 100%;">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs1 i8">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs1 i9">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs1 i10">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs1 i12">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs1 i13">
+          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-width iw11">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw14">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw15">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        </div>
+      </div>
+      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+    </section>
+
+    <section class="section piercing" id="piercing" style="background-image: url('../images/footer-bg.png'); background-size: cover;">
+      <div class="container" style="border: 1px solid black; margin-inline: 0; width: 100%; max-width: none;">
+        <h2 class="section-title text-center" style="color: white; margin-bottom: 40px;">Galeria de Perforaciones</h2>
+        <div class="img" style="width: 100%;">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i8">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i9">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i10">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i12">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i13">
+          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-width iw11">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw14">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw15">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        </div>
+      </div>
+      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+    </section>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            North Side Studio
+            <span class="span">Barbería, Tattoo y Perforaciones</span>
+          </a>
+
+          <form action="" class="input-wrapper">
+
+            <input type="email" name="email_address" placeholder="Ingresa tu Email" required class="email-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribete Ahora</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Accesos Rápidos</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nuestros Servicios</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Conoce a Nuestro Equipo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nuestro Portafolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Galería</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Contáctanos</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Servicios</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Cortes</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Tattoo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Perforaciones</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Razurado</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Tintes</a>
+            </li>
+
+          </ul>
+          <!-- unordened list canceled -->
+          <!-- <ul class="footer-list">
+            
+            <li>
+              <p class="footer-list-title">Recent News</p>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
+                    alt="The beginners guide to Henna Brows in Brisbane" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">The beginners guide to Henna Brows in Brisbane</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">25 August 2022</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
+                    alt="How do I get rid of unwanted hair on my face?" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">How do I get rid of unwanted hair on my face?</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">25 August 2022</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul> -->
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contáctanos</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link">
+                Ancón
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+0123456789" class="contact-link">974 190 538</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="contact-link">Lun - Sáb, 09 am - 10 pm</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:support@gmail.com" class="contact-link">NorthSideStudio@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">The Frog Team</a>. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
 
   <!-- 
     - #BACK TO TOP
