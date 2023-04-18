@@ -938,7 +938,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   /* border-bottom: 1px solid rgba(0,0,0,.4); */
   border: 1px solid black;
 } 
-
+.social-nav a:hover {animation: vibrate 0.5s linear ;}
 .social-nav li:nth-child(1) a {
   background-color: #0a0a0a;
 }
@@ -976,7 +976,32 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   top: 16px;
   font-size: 27px;
   /* padding-bottom: 60px;  */
+}
 
+/*Vibrar Icono*/
+.vibrate-img:hover {
+  animation: vibrate 0.5s linear 4;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /* Social Hover */
