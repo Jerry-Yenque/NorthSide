@@ -470,7 +470,9 @@ body {
 }
 
 
-
+.pulse-img:hover {
+  animation: pulse 0.5s linear 5;
+}
 
 
 /*-----------------------------------*\
