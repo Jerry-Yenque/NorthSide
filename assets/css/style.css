@@ -1290,7 +1290,9 @@ ul.social span {
 
   .header-top { max-width: 780px; }
 
-
+  /* agregado */
+  .logo { margin-left: -220px; }
+  /*fin agregado*/
 
   /**
    * SERVICE
@@ -1391,6 +1393,9 @@ ul.social span {
 
   .navbar-link { padding-inline: 10px; }
 
+  /* agregado */
+  .logo { margin-left: 0px; }
+  /*fin agregado*/
   
 
   /**
@@ -1534,7 +1539,9 @@ ul.social span {
 
   .header-top-item:nth-child(2) { margin-inline-end: auto; }
 
-
+  /* agregado */
+  .logo { margin-left: -220px; }
+  /*fin agregado*/
 
   /**
    * HERO
