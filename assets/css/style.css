@@ -23,7 +23,9 @@
   --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
-  --indian-yellow: hsl(36, 61%, 58%);
+  /* --indian-yellow: hsl(36, 61%, 58%); OLD */
+  /* --indian-yellow: #1789d1; */
+  --indian-yellow: #186392;
   --harvest-gold: hsl(36, 66%, 53%);
   --eerie-black-1: hsl(0, 0%, 14%);
   --eerie-black-2: hsl(0, 0%, 12%);
@@ -468,8 +470,21 @@ body {
 }
 
 
+.pulse-img:hover {
+  animation: pulse 0.5s linear 2;
+}
 
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
 
 /*-----------------------------------*\
   #PRICING
@@ -888,7 +903,8 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--harvest-gold);
+  /* background-color: var(--harvest-gold); old */
+  background-color: var(--indian-yellow);
   color: var(--white);
   font-size: 20px;
   padding: 10px;
