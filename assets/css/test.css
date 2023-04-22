@@ -1,0 +1,57 @@
+:root {
+    --section-padding: 80px;
+}
+
+.section { padding-block: var(--section-padding); }
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media Query 1114 */
+.hero {
+    --section-padding: 100px;
+    padding-block-start: calc(var(--section-padding) + 40px);
+    background-position: left;
+}
+
+
+
+@media (min-width: 575px) {
+
+.hero { padding-block-start: calc(var(--section-padding) + 80px); }
+    
+}
+
+@media (min-width: 992px) {
+
+.hero {
+    --section-padding: 150px;
+    padding-block-start: calc(var(--section-padding) + 100px);
+    }
+}
+
+@media (min-width: 1200px) {
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-40: 11rem;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 120px;
+
+  }
+
+  .hero {
+    background-position: left;
+    padding-block-end: 200px;
+  }
+}

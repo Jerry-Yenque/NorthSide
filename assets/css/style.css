@@ -413,7 +413,9 @@ body {
   margin-block: 15px 40px;
 }
 
-
+/* Jerry */
+.logo-4k { max-width: 230px; margin-inline: auto;}
+/* end Jerry */
 
 
 
@@ -1200,7 +1202,9 @@ ul.social span {
 
   .hero-text { font-size: var(--fs-18); }
 
-
+  /* Jerry */
+  .logo-4k { max-width: 520px;}
+  /* end Jerry */
 
   /**
    * PRICING
@@ -1451,6 +1455,9 @@ ul.social span {
   .hero-title,
   .hero-text { max-width: 600px; }
 
+  /* Jerry */
+  .logo-4k { max-width: 800px;}
+  /* end Jerry */
 
 
   /**
