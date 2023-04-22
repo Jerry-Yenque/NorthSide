@@ -414,7 +414,7 @@ body {
 }
 
 /* Jerry */
-.logo-4k { max-width: 230px; margin-inline: auto; animation: pulse 3s linear infinite;}
+.logo-4k { max-width: 230px; margin-inline: auto; } /* animation: pulse 3s linear infinite; retirado por que a pantallas muy pequeñas da scroll horizontal */
 /* end Jerry */
 
 
