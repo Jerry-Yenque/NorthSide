@@ -410,10 +410,12 @@ body {
 
 .hero-text {
   color: var(--white);
-  margin-block: 15px 40px;
+  margin-block: 15px 30px; /* default: 15px 40px*/
 }
 
-
+/* Jerry */
+.logo-4k { max-width: 230px; margin-inline: auto; } /* animation: pulse 3s linear infinite; retirado por que a pantallas muy pequeñas da scroll horizontal */
+/* end Jerry */
 
 
 
@@ -1200,7 +1202,11 @@ ul.social span {
 
   .hero-text { font-size: var(--fs-18); }
 
-
+  /* Jerry */
+  /* .logo-4k { width: 520px; height: 310px; } */
+  /* .logo-4k { max-width: 490px;} */
+  .logo-4k { min-width: 520px; max-height: 310px;}
+  /* end Jerry */
 
   /**
    * PRICING
@@ -1333,6 +1339,9 @@ ul.social span {
 
   /* agregado */
   .logo { margin-left: -220px; }
+  /* .logo-4k { width: 520px; height: 310px;} */
+  /* .logo-4k { max-width: 700px;} */
+  .logo-4k { min-width: 520px; max-height: 310px;}
   /*fin agregado*/
 
   /**
@@ -1444,13 +1453,18 @@ ul.social span {
    */
 
   .hero {
-    --section-padding: 150px;
+    --section-padding: 40px; /* 150px por default */
     padding-block-start: calc(var(--section-padding) + 100px);
   }
 
   .hero-title,
   .hero-text { max-width: 600px; }
 
+  /* Jerry */
+  .logo-4k { min-width: 620px; max-height: 410px;}
+  /* .logo-4k { width: 700px; height: 310px;} */
+  /* .logo-4k { width: 520px; height: 310px;} */
+  /* end Jerry */
 
 
   /**
