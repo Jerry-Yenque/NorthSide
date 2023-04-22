@@ -1204,7 +1204,8 @@ ul.social span {
 
   /* Jerry */
   /* .logo-4k { width: 520px; height: 310px; } */
-  .logo-4k { max-width: 490px;}
+  /* .logo-4k { max-width: 490px;} */
+  .logo-4k { min-width: 520px; max-height: 310px;}
   /* end Jerry */
 
   /**
@@ -1340,7 +1341,7 @@ ul.social span {
   .logo { margin-left: -220px; }
   /* .logo-4k { width: 520px; height: 310px;} */
   /* .logo-4k { max-width: 700px;} */
-  .logo-4k { min-width: 520px; max-height: 399px;}
+  .logo-4k { min-width: 520px; max-height: 310px;}
   /*fin agregado*/
 
   /**
