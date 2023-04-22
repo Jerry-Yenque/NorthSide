@@ -410,7 +410,7 @@ body {
 
 .hero-text {
   color: var(--white);
-  margin-block: 15px 40px;
+  margin-block: 15px 20px; /* default: 15px 40px*/
 }
 
 /* Jerry */
@@ -1337,6 +1337,7 @@ ul.social span {
 
   /* agregado */
   .logo { margin-left: -220px; }
+  .logo-4k { width: 520px; height: 310px;}
   /*fin agregado*/
 
   /**
@@ -1448,7 +1449,7 @@ ul.social span {
    */
 
   .hero {
-    --section-padding: 150px;
+    --section-padding: 40px; /* 150px por default */
     padding-block-start: calc(var(--section-padding) + 100px);
   }
 
@@ -1456,7 +1457,9 @@ ul.social span {
   .hero-text { max-width: 600px; }
 
   /* Jerry */
-  .logo-4k { max-width: 800px;}
+  /* .logo-4k { max-width: 800px;} */
+  /* .logo-4k { width: 700px; height: 310px;} */
+  .logo-4k { width: 520px; height: 310px;}
   /* end Jerry */
 
 
