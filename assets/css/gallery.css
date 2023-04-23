@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: -100px;
   }
   .img-vs1 {
     width: 20%;
@@ -43,6 +44,12 @@
     width: 100%;
   }
 
+
+  /*Bordes para los banners de la galeria*/
+  .border-shadow-image {
+    border: 10px solid #ffd819; /* Cambia el valor #f00 por el color de borde que desees */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5); /* Cambia los valores para ajustar la sombra */
+  }
 
 /*Codigo para los estilos del boton regresar*/
   .draw-border {
