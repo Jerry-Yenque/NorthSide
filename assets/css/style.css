@@ -5,7 +5,12 @@
 /**
  * copyright 2023 Frog Team
  */
-
+ @font-face {
+  font-family: Cairlin;
+  src: url('../fonts/Cairlinn.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
 
 
 
