@@ -186,7 +186,7 @@ body {
 
 .container { padding-inline: 15px; }
 
-.section { padding-block: var(--section-padding); }
+.section { padding-block: var(--section-padding);   margin-bottom: 0; }
 
 .has-before,
 .has-after {
