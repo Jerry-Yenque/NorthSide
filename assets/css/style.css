@@ -5,7 +5,12 @@
 /**
  * copyright 2023 Frog Team
  */
-
+ @font-face {
+  font-family: 'Cairlin';
+  src: url('../fonts/Cairlinn.ttf') format('truetype');
+  /* font-style: normal;
+  font-weight: normal; */
+}
 
 
 
@@ -23,9 +28,9 @@
   --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
-  /* --indian-yellow: hsl(36, 61%, 58%); OLD */
-  /* --indian-yellow: #1789d1; */
-  --indian-yellow: #186392;
+  /* --indian-yellow: hsl(36, 61%, 58%); predeterminado */
+  /* --indian-yellow: #1789d1; -> Jhonny */
+  --indian-yellow: #186392; /* Daddy Yenque */
   --harvest-gold: hsl(36, 66%, 53%);
   --eerie-black-1: hsl(0, 0%, 14%);
   --eerie-black-2: hsl(0, 0%, 12%);
@@ -46,8 +51,11 @@
    * typography
    */
 
-  --ff-oswald : 'Oswald', sans-serif;
+  --ff-oswald: 'Oswald', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
+  /* Jerry */
+  --ff-cairlin: 'Cairlin', serif;
+  /* End Jerry */
 
   --fs-40: 4rem;
   --fs-30: 3rem;
@@ -330,9 +338,9 @@ body {
 
 .logo {
   color: var(--sonic-silver); /* (--indian-yellow) */
-  font-family: var(--ff-oswald); 
+  font-family: var(--ff-cairlin);  /* --ff-oswald */
   font-size: 2.7rem;  /* 2.7rem */
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-500); /* --fw-600 */
   text-transform: uppercase;
   line-height: 1.4;
 }
@@ -1188,7 +1196,7 @@ ul.social span {
 
   .header-top-list { justify-content: space-between; }
 
-  .logo { font-size: 3rem; }
+  .logo { font-size: 3.5rem; } /* 3rem */
 
   .logo .span { font-size: 1.4rem; }
 
@@ -1338,7 +1346,7 @@ ul.social span {
   .header-top { max-width: 780px; }
 
   /* agregado */
-  .logo { margin-left: -220px; }
+  /* .logo { margin-left: -220px; } */
   /* .logo-4k { width: 520px; height: 310px;} */
   /* .logo-4k { max-width: 700px;} */
   .logo-4k { min-width: 520px; max-height: 310px;}
@@ -1444,7 +1452,7 @@ ul.social span {
   .navbar-link { padding-inline: 10px; }
 
   /* agregado */
-  .logo { margin-left: 0px; }
+  /* .logo { margin-left: 0px; } */
   /*fin agregado*/
   
 
@@ -1595,7 +1603,7 @@ ul.social span {
   .header-top-item:nth-child(2) { margin-inline-end: auto; }
 
   /* agregado */
-  .logo { margin-left: -220px; }
+  /* .logo { margin-left: -220px; } */
   /*fin agregado*/
 
   /**
