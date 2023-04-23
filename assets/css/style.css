@@ -494,7 +494,22 @@ body {
   100% {
     transform: scale(1);
   }
-} 
+}
+
+/*Codigo par animar un spin del logo*/
+.spin-img:hover {
+  animation: spin 1s linear 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* fin spin Jhonny */
 
 /*-----------------------------------*\
   #PRICING
