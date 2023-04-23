@@ -113,7 +113,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: solid 1px red;
 }
 
 li { list-style: none; }
@@ -1197,7 +1196,7 @@ ul.social span {
 
   .header-top-list { justify-content: space-between; }
 
-  .logo { font-size: 5rem; } /* 3rem */
+  .logo { font-size: 3.5rem; } /* 3rem */
 
   .logo .span { font-size: 1.4rem; }
 
