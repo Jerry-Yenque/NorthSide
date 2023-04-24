@@ -1,4 +1,11 @@
-  
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
 /*Codigo que hace funcionar la galeria dinamica de galeria.html*/
 .img {
     display: flex;
