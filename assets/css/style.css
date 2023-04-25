@@ -1544,7 +1544,7 @@ ul.social span {
    */
 
   .footer-brand {
-    display: flex;
+    /* display: flex; */
     align-items: center;
   }
 
