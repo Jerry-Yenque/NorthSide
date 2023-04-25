@@ -117,3 +117,20 @@
     outline: 2px dotted #55d7dc;
   }
   
+
+/*-----------------------------------*\
+  #HAIRCUT
+\*-----------------------------------*/
+
+.haircut {
+  --section-padding: 100px;
+  padding-block-start: calc(var(--section-padding) + 40px);
+  margin-top: 155px;
+}
+
+.haircut::before {
+  inset: 0;
+  background-color: var(--eerie-black-2_85);
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
