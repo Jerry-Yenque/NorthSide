@@ -186,7 +186,7 @@ body {
 
 .container { padding-inline: 15px; }
 
-.section { padding-block: var(--section-padding); }
+.section { padding-block: var(--section-padding);   margin-bottom: 0; } /* added margin-bottom: 0; */
 
 .has-before,
 .has-after {
@@ -343,6 +343,7 @@ body {
   font-weight: var(--fw-500); /* --fw-600 */
   text-transform: uppercase;
   line-height: 1.4;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
 }
 
 .logo .span {
@@ -1544,7 +1545,7 @@ ul.social span {
    */
 
   .footer-brand {
-    display: flex;
+    /* display: flex; */
     align-items: center;
   }
 
