@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- lang="es-PE" para español y Perú-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>North Side Studio</title>
+  <meta name="title" content="North Side Studio">
+  <meta name="description" content="North Side Studio Proyect is a barbershop website build on HTML + CSS and Mr. JavaScript.
+  Implement by The Frog team:
+      -Jerry Yenque
+      -Jhonny Manrique" />
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+
+  <!--
+    -Flickity
+  -->
+  <!-- <link rel="stylesheet" href="./assets/css/flickity.css" media="screen"> -->
+  
+  <!-- 
+    - google font link
+  -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+    rel="stylesheet"> -->
+
+  <!-- 
+    - flaticon
+  -->
+  <link rel="stylesheet" href="../css/flaticon.min.css">
+
+  <!--
+    - font awesome
+  -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <!-- 
+    - preload images
+  -->
+  <!-- <link rel="preload" as="image" href="./assets/images/hero.jpg"> -->
+
+</head>
+
+<body id="top" style="background-color: rgb(19, 18, 18);">
+
+  <!-- 
+    - #HEADER
+  -->
+  <div class="social-nav" hidden>
+    <ul>
+      <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li> 
+        <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+        <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
+        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    </ul>
+  </div>
+  
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <ul class="header-top-list">
+
+          <li class="header-top-item">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            
+            <p class="item-title">Llámanos :</p>
+
+            <a href="tel:01234567895" class="item-link">974 190 538</a>
+          </li>
+
+          <li class="header-top-item">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+            <p class="item-title">Horario :</p>
+
+            <p class="item-text">Lunes - Sábado, 09 am - 10 pm</p>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+              
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <!-- <ion-icon name="chatbubble-ellipses-outline"></ion-icon> -->
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" data-header>
+      <div class="container">
+        <figure class="card-banner img-holder" style="--width: 90; --height: 90; border-radius: 50%;">
+          <img src="../images/logo.png" width="70" height="70" alt="Hair Cutting & Fitting"
+            class=""> 
+        </figure>
+        <a href="#" class="logo">
+          North Side Studio
+          <span class="span">Barbería, Tatuajes y Piercings</span>
+        </a>
+
+        <nav class="navbar container" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="../../index.html" class="navbar-link" data-nav-link>Regresar</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Cortes</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#tattoo" class="navbar-link" data-nav-link>Tatuajes</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#piercing" class="navbar-link" data-nav-link>Piercings</a>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Nuestro Equipo</a>
+            </li> -->
+
+          </ul>
+        </nav>
+
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  
+    <section class="section haircut" style="background-color: #86231c;" >
+      
+      <div class="container">
+        <img class="border-shadow-image" src="../images/BannerCortes.jpg" width="100%">
+        <div class="sectioner-banner">
+          <img src="../images/logo1.png">
+          <h2  class="section-title text-center">Galería de Cortes</h2>
+          <img src="../images/logo1.png">
+        </div>
+          
+       
+        <div class="img">
+          <img src="../images/blue-out.png" alt="" class="img-vs1 i8">
+          <img src="../images/skin-fade.png" alt="" class="img-vs1 i9">
+          <img src="../images/blue-out.png" alt="" class="img-vs1 i10">
+          <img src="../images/skin-fade.png" alt="" class="img-vs1 i12">
+          <img src="../images/blue-out.png" alt="" class="img-vs1 i13">
+          <img src="../img-gallery/gallery-1.jpg" alt="" class="img-width iw11">
+          <img src="../img-gallery/gallery-2.jpg" alt="" class="img-width iw14">
+          <img src="../img-gallery/gallery-1.jpg" alt="" class="img-width iw15">
+          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        </div>
+      </div>
+      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+    </section>
+
+    <section class="section tattoo" id="tattoo" style="background-color:rgba(4,60,129,255);">
+      <div class="container">
+        <img class="border-shadow-image" src="../images/bannerTatuaje.jpg" width="100%" style="margin-top: -50px;">
+        <div class="sectioner-banner">
+          <img src="../images/logo2.png" width="64px">
+          <h2  class="section-title text-center">Galeria de Tatuajes</h2>
+          <img src="../images/logo2.png" width="64px">
+        </div>
+        <div class="img" style="width: 100%;">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i8">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i9">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i10">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i12">
+
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i8">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i9">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i10">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i12">
+        
+          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-width iw11">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw14">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw15">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        </div>
+      </div>
+      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+    </section>
+
+    <section class="section piercing" id="piercing" style="background-image: url('../images/footer-bg.png'); background-size: cover;">
+      <div class="container">
+        <img class="border-shadow-image" src="../images/bannerPiercing.jpg" width="100%">
+        <div class="sectioner-banner">
+          <img src="../images/logo3.png">
+          <h2  class="section-title text-center">Galeria de Piercings</h2>
+          <img src="../images/logo3.png">
+        </div>
+        <div class="img" style="width: 100%;">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i8">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i9">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i10">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i12">
+          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i13">
+          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-width iw11">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw14">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw15">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
+          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        </div>
+      </div>
+      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+    </section>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer has-bg-image" style="background-image: url('../images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo" style="margin-left: 0px;">
+            North Side Studio
+            <span class="span">Barbería, Tattoo y Perforaciones</span>
+          </a>
+
+          <!-- <form action="" class="input-wrapper">
+
+            <input type="email" name="email_address" placeholder="Ingresa tu Email" required class="email-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribete Ahora</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form> -->
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Accesos Rápidos</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nuestros Servicios</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Conoce a Nuestro Equipo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Nuestro Portafolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Galería</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Contáctanos</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Servicios</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Cortes</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Tattoo</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Perforaciones</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Razurado</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Tintes</a>
+            </li>
+
+          </ul>
+          <!-- unordened list canceled -->
+          <!-- <ul class="footer-list">
+            
+            <li>
+              <p class="footer-list-title">Recent News</p>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-1.jpg" width="70" height="75" loading="lazy"
+                    alt="The beginners guide to Henna Brows in Brisbane" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">The beginners guide to Henna Brows in Brisbane</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">25 August 2022</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 70; --height: 75;">
+                  <img src="./assets/images/footer-blog-2.jpg" width="70" height="75" loading="lazy"
+                    alt="How do I get rid of unwanted hair on my face?" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3>
+                    <a href="#" class="card-title">How do I get rid of unwanted hair on my face?</a>
+                  </h3>
+
+                  <div class="card-date">
+                    <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                    <time datetime="2022-08-25">25 August 2022</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul> -->
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contáctanos</p>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="contact-link">
+                Cooperativa Virgen del rosario MZ. I lote 1
+              </address>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+0123456789" class="contact-link">974 190 538</a>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+              <span class="contact-link">Lun - Sáb, 09 am - 10 pm</span>
+            </li>
+
+            <li class="footer-list-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <a href="mailto:support@gmail.com" class="contact-link">NorthSideStudio@gmail.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">The Frog Team</a>. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../js/gallery.js" defer></script>
+
+  <!--
+    - flickity js
+  -->
+  <!-- <script src="./assets/js/flickity.pkgd.min.js"></script> -->
+  
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

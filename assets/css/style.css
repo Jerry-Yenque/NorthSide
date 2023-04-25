@@ -3,9 +3,14 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2023 Frog Team
  */
-
+ @font-face {
+  font-family: 'Cairlin';
+  src: url('../fonts/Cairlinn.ttf') format('truetype');
+  /* font-style: normal;
+  font-weight: normal; */
+}
 
 
 
@@ -23,7 +28,9 @@
   --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
   --rich-black-fogra-39: hsl(0, 0%, 5%);
   --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
-  --indian-yellow: hsl(36, 61%, 58%);
+  /* --indian-yellow: hsl(36, 61%, 58%); predeterminado */
+  /* --indian-yellow: #1789d1; -> Jhonny */
+  --indian-yellow: #186392; /* Daddy Yenque */
   --harvest-gold: hsl(36, 66%, 53%);
   --eerie-black-1: hsl(0, 0%, 14%);
   --eerie-black-2: hsl(0, 0%, 12%);
@@ -44,8 +51,11 @@
    * typography
    */
 
-  --ff-oswald : 'Oswald', sans-serif;
+  --ff-oswald: 'Oswald', sans-serif;
   --ff-rubik: 'Rubik', sans-serif;
+  /* Jerry */
+  --ff-cairlin: 'Cairlin', serif;
+  /* End Jerry */
 
   --fs-40: 4rem;
   --fs-30: 3rem;
@@ -176,7 +186,7 @@ body {
 
 .container { padding-inline: 15px; }
 
-.section { padding-block: var(--section-padding); }
+.section { padding-block: var(--section-padding);   margin-bottom: 0; } /* added margin-bottom: 0; */
 
 .has-before,
 .has-after {
@@ -327,12 +337,13 @@ body {
 }
 
 .logo {
-  color: var(--indian-yellow);
-  font-family: var(--ff-oswald);
-  font-size: 2.7rem;
-  font-weight: var(--fw-600);
+  color: var(--sonic-silver); /* (--indian-yellow) */
+  font-family: var(--ff-cairlin);  /* --ff-oswald */
+  font-size: 2.7rem;  /* 2.7rem */
+  font-weight: var(--fw-500); /* --fw-600 */
   text-transform: uppercase;
   line-height: 1.4;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
 }
 
 .logo .span {
@@ -408,10 +419,12 @@ body {
 
 .hero-text {
   color: var(--white);
-  margin-block: 15px 40px;
+  margin-block: 15px 30px; /* default: 15px 40px*/
 }
 
-
+/* Jerry */
+.logo-4k { max-width: 230px; margin-inline: auto; } /* animation: pulse 3s linear infinite; retirado por que a pantallas muy pequeñas da scroll horizontal */
+/* end Jerry */
 
 
 
@@ -431,6 +444,11 @@ body {
 }
 
 .service-card .card-icon {
+  /* Stilo Agregado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Fin Stilo Agregado */
   color: var(--indian-yellow);
   font-size: 70px;
   line-height: 1;
@@ -463,8 +481,36 @@ body {
 }
 
 
+.pulse-img:hover {
+  animation: pulse 0.5s linear 2;
+}
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+/*Codigo par animar un spin del logo*/
+.spin-img:hover {
+  animation: spin 1s linear 1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* fin spin Jhonny */
 
 /*-----------------------------------*\
   #PRICING
@@ -611,9 +657,34 @@ body {
   color: var(--white);
 }
 
+/*-----------------------------------*\
+  #TEAM
+\*-----------------------------------*/
 
+.team::before {
+  inset: 0;
+  background-color: var(--eerie-black-2_85);
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
 
+.team .section-title { color: var(--white); }
 
+.team .section-text {
+  margin-block: 15px 55px;
+  color: var(--white_50);
+}
+
+.team .grid-list { padding-inline: 20px; }
+
+.team .grid-list > li.active { animation: popup 0.75s ease forwards; }
+
+@keyframes popup {
+
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+
+}
 
 /*-----------------------------------*\
   #APPOINTMENT
@@ -858,7 +929,8 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--harvest-gold);
+  /* background-color: var(--harvest-gold); old */
+  background-color: var(--indian-yellow);
   color: var(--white);
   font-size: 20px;
   padding: 10px;
@@ -875,8 +947,188 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
   transform: translateY(-10px);
 }
 
+/* SocialNav */
+.social-nav {
+  /* background-color: none; */
+  position: fixed;
+  width: 60px;
+  margin-right: 17px;
+  right: 0;
+  bottom: 70px;
+  /* box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4); */
+  /* border: 1px solid green; */
+  z-index: 5;
+}
+.social-nav li {
+  height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+  /* border: 1px solid red; */
+} 
+.social-nav a {
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* line-height: 50px; */
+  /* padding-left: 33%; */
+  border-radius: 50%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding-left: 25%; */
+  /* border-bottom: 1px solid rgba(0,0,0,.4); */
+  border: 1px solid black;
+} 
+.social-nav a:hover {animation: vibrate 0.5s linear ;}
+.social-nav li:nth-child(1) a {
+  background-color: #0a0a0a;
+}
+
+.social-nav li:nth-child(2) a {
+  background-color: #4267B2;
+}
+
+.social-nav li:nth-child(3) a {
+  background-color: #E1306C;
+}
+
+.social-nav li:nth-child(4) a {
+  background-color: #ff0000;
+}
+
+.social-nav li:nth-child(5) a {
+  background-color: #075E54;
+}
+
+.social-nav i {
+  position: relative;
+  /* bottom: 5px; */
+  /* left: 15px;  */
+  top: 16px;
+  font-size: 27px;
+  /* padding-bottom: 60px;  */
+
+}
+
+.social-nav ion-icon {
+  position: relative;
+  /* bottom: 5px; */
+  left: 15px; 
+  top: 16px;
+  font-size: 27px;
+  /* padding-bottom: 60px;  */
+}
+
+/*Vibrar Icono*/
+.vibrate-img:hover {
+  animation: vibrate 0.5s linear 4;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Social Hover */
+ul.social { 
+list-style: none; 
+margin: 10px 0;
+padding-left:0;
+}
+.social li { 
+line-height: 1;
+display: inline-block;
+  margin-right: 10px;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.social a {
+  -webkit-transition: background-position 200ms ease;
+  -moz-transition: background-position 200ms ease;
+  -o-transition: background-position 200ms ease;
+  transition: background-position 200ms ease;
+  display: block;
+  width: 37px;
+  height: 35px;
+  background: url(../fonts/social-img-spry-assets3.gif) 0 0 no-repeat;
 
 
+}
+.social .social--facebook a { background-position: 0px 0; }
+.social .social--facebook a:hover{background-position:-0px -38px}
+
+.social .social--tiktok a { background-position: -39px 0;}
+.social .social--tiktok a:hover{background-position:-39px -39px; }
+
+.social .social--instagram a { background-position: -76px 0; }
+.social .social--instagram a:hover{background-position:-76px -39px}
+
+.social .social--whatshap a { background-position: -117px 0; }
+.social .social--whatshap a:hover{background-position:-117px -39px}
+
+
+ul.social span {
+   opacity: 1;
+  display: none
+}
+.social-wrapper {
+  display: inline-block; /* Para que el contenedor se ajuste al tamaño de los elementos */
+  background-color: #00000067; /* Color de fondo del rectángulo */
+  border: 1px solid #000000; /* Borde del rectángulo */
+  padding: 0; /* Elimina el espacio entre el borde y los elementos */
+  margin: 0; /* Elimina el espacio en la parte superior e inferior del contenedor */
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0  ;
+  
+  transition: opacity 0.5s ease-in-out;
+}
+
+.social-wrapper.visible {
+  opacity: 1;
+}
+
+.gallery-card:hover .social-wrapper {
+  opacity: 1;
+}
+
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* .image-container img {
+  transition: transform 0.2s ease-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.02111);
+} */
 
 
 /*-----------------------------------*\
@@ -960,7 +1212,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .header-top-list { justify-content: space-between; }
 
-  .logo { font-size: 3rem; }
+  .logo { font-size: 3.5rem; } /* 3rem */
 
   .logo .span { font-size: 1.4rem; }
 
@@ -974,7 +1226,11 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .hero-text { font-size: var(--fs-18); }
 
-
+  /* Jerry */
+  /* .logo-4k { width: 520px; height: 310px; } */
+  /* .logo-4k { max-width: 490px;} */
+  .logo-4k { min-width: 520px; max-height: 310px;}
+  /* end Jerry */
 
   /**
    * PRICING
@@ -1008,7 +1264,16 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .gallery .grid-list { grid-template-columns: 1fr 1fr; }
 
-
+  /* clases agregadas para galería*/
+  .grid-item-g {
+    border-radius: 16px;
+    width: 22.5vw;
+    height: 22.5vw;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px 3px #ccc;
+  }
+  /* fin clases agregadas para galería*/
 
   /**
    * APPOINTMENT
@@ -1096,7 +1361,12 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .header-top { max-width: 780px; }
 
-
+  /* agregado */
+  /* .logo { margin-left: -220px; } */
+  /* .logo-4k { width: 520px; height: 310px;} */
+  /* .logo-4k { max-width: 700px;} */
+  .logo-4k { min-width: 520px; max-height: 310px;}
+  /*fin agregado*/
 
   /**
    * SERVICE
@@ -1197,6 +1467,9 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .navbar-link { padding-inline: 10px; }
 
+  /* agregado */
+  /* .logo { margin-left: 0px; } */
+  /*fin agregado*/
   
 
   /**
@@ -1204,13 +1477,18 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
    */
 
   .hero {
-    --section-padding: 150px;
+    --section-padding: 40px; /* 150px por default */
     padding-block-start: calc(var(--section-padding) + 100px);
   }
 
   .hero-title,
   .hero-text { max-width: 600px; }
 
+  /* Jerry */
+  .logo-4k { min-width: 620px; max-height: 410px;}
+  /* .logo-4k { width: 700px; height: 310px;} */
+  /* .logo-4k { width: 520px; height: 310px;} */
+  /* end Jerry */
 
 
   /**
@@ -1245,7 +1523,11 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .gallery .section-text { margin-block-end: 0; }
 
-
+  /**
+   * TEAM
+   */
+   .team .grid-list { grid-template-columns: 1fr 1fr; }
+  
 
   /**
    * APPOINTMENT
@@ -1263,7 +1545,7 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
    */
 
   .footer-brand {
-    display: flex;
+    /* display: flex; */
     align-items: center;
   }
 
@@ -1336,7 +1618,9 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 
   .header-top-item:nth-child(2) { margin-inline-end: auto; }
 
-
+  /* agregado */
+  /* .logo { margin-left: -220px; } */
+  /*fin agregado*/
 
   /**
    * HERO

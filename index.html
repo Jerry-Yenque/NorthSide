@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- lang="es-PE" para español y Perú-->
 
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,12 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Barber - Barbers & Hair Cutting</title>
-  <meta name="title" content="Barber - Barbers & Hair Cutting">
-  <meta name="description" content="This is a barber html template made by codewithsadee">
+  <title>North Side Studio</title>
+  <meta name="title" content="North Side Studio">
+  <meta name="description" content="North Side Studio Proyect is a barbershop website build on HTML + CSS and Mr. JavaScript.
+  Implement by The Frog team:
+      -Jerry Yenque
+      -Jhonny Manrique" />
 
   <!-- 
     - favicon
@@ -23,13 +26,19 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!--
+    -Flickity
+  -->
+  <link rel="stylesheet" href="./assets/css/flickity.css" media="screen">
+  
   <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:wght@400;" > -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;700&display=swap"
     rel="stylesheet">
 
   <!-- 
@@ -37,10 +46,16 @@
   -->
   <link rel="stylesheet" href="assets/css/flaticon.min.css">
 
+  <!--
+    - font awesome
+  -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
   <!-- 
     - preload images
   -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero.jpg">
 
 </head>
 
@@ -49,7 +64,20 @@
   <!-- 
     - #HEADER
   -->
-
+  <div class="social-nav">
+    <ul>
+      <li><a href="#" class="vibrate-img"><ion-icon  name="logo-tiktok"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
+      <li><a href="https://web.facebook.com/profile.php?id=100069787795818" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li> 
+        <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+      <li><a href="https://www.instagram.com/northside.barbershop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+      <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
+      <li><a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    </ul>
+  </div>
+  
   <header class="header">
 
     <div class="header-top">
@@ -59,18 +87,18 @@
 
           <li class="header-top-item">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            
+            <p class="item-title">Llámanos :</p>
 
-            <p class="item-title">Call Us :</p>
-
-            <a href="tel:01234567895" class="item-link">012 (345) 67 895</a>
+            <a href="tel:01234567895" class="item-link">(+51)934 864 278</a>
           </li>
 
           <li class="header-top-item">
             <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-            <p class="item-title">Opening Hour :</p>
+            <p class="item-title">Horario :</p>
 
-            <p class="item-text">Sunday - Friday, 08 am - 09 pm</p>
+            <p class="item-text">Lunes - Sábado, 09 am - 10 pm</p>
           </li>
 
           <li>
@@ -78,13 +106,19 @@
 
               <li>
                 <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.instagram.com/northside.barbershop/" class="social-link" target="_blank">
+                  <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
 
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                <a href="https://web.facebook.com/profile.php?id=100069787795818" class="social-link" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
 
@@ -95,8 +129,9 @@
               </li>
 
               <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" class="social-link" target="_blank">
+                  <!-- <ion-icon name="chatbubble-ellipses-outline"></ion-icon> -->
+                  <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
               </li>
 
@@ -110,37 +145,40 @@
 
     <div class="header-bottom" data-header>
       <div class="container">
-
+        <!-- <figure class="card-banner img-holder" style="--width: 90; --height: 90; border-radius: 50%;">
+          <img src="./assets/images/logo.png" width="70" height="70" alt="Hair Cutting & Fitting"
+            class=""> 
+        </figure> -->
         <a href="#" class="logo">
-          Barber
-          <span class="span">Hair Salon</span>
+          North Side Studio
+          <span class="span">Barbería, Tattoo y Perforaciones</span>
         </a>
 
         <nav class="navbar container" data-navbar>
           <ul class="navbar-list">
 
             <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#services" class="navbar-link" data-nav-link>Services</a>
+              <a href="#services" class="navbar-link" data-nav-link>Servicios</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#pricing" class="navbar-link" data-nav-link>Pricing</a>
+              <a href="#pricing" class="navbar-link" data-nav-link>Precios</a>
             </li>
 
             <li class="navbar-item">
-              <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+              <a href="#gallery" class="navbar-link" data-nav-link>Galería</a>
             </li>
 
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
               <a href="#appointment" class="navbar-link" data-nav-link>Appointment</a>
-            </li>
+            </li> -->
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+              <a href="#team" class="navbar-link" data-nav-link>Nuestro Equipo</a>
             </li>
 
           </ul>
@@ -150,20 +188,16 @@
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#" class="btn has-before">
+        <!-- <a href="#" class="btn has-before">
           <span class="span">Appointment</span>
 
           <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-        </a>
+        </a> -->
 
       </div>
     </div>
 
   </header>
-
-
-
-
 
   <main>
     <article>
@@ -173,29 +207,24 @@
       -->
 
       <section class="section hero has-before has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/images/hero-banner.jpg')">
+        style="background-image: url('./assets/images/hero.jpg')">
         <div class="container">
 
-          <h1 class="h1 hero-title">Barbers & Hair Cutting</h1>
+          <!-- <h1 class="h1 hero-title">North Side Studio Art</h1> -->
+          <img src="assets/images/logo-4k-1.png" alt="logo" class="logo-4k">
 
           <p class="hero-text">
-            Sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            suspendisse
-            ultrices gravida
+            "Estilo, arte y actitud. Visitanos Transforma tu estilo con Northside Studio. El lugar donde la creatividad se encuentra con el arte corporal."
           </p>
 
-          <a href="#" class="btn has-before">
-            <span class="span">Explore Our Services</span>
+          <a href="#services" class="btn has-before">
+            <span class="span">Explora más contenido</span>
 
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </a>
 
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #SERVICE
@@ -204,10 +233,10 @@
       <section class="section service" id="services" aria-label="services">
         <div class="container">
 
-          <h2 class="h2 section-title text-center">Service We Provide</h2>
+          <h2 class="h2 section-title text-center">Nuestros Servicios</h2>
 
-          <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+          <p class="text-center"> <!-- section-text -> this class was removed from p tag-->
+            En Northside Studio, ofrecemos una amplia variedad de servicios para ayudarte a expresarte y sentirte seguro de ti mismo. Nuestros talentosos equipo te proporcionarán el corte perfecto que se adapte a tu estilo, mientras que nuestros tatuadores expertos están listos para ayudarte a crear un diseño único y personalizado. Y para los mas atrevidos, ofrecemos una selección de perforaciones corporales, desde orejas, lenguas consultanos. Ya sea que estés buscando un cambio completo o simplemente un toque final para completar tu estilo, ¡nosotros lo hacemos posible!
           </p>
 
           <ul class="grid-list">
@@ -215,16 +244,40 @@
             <li>
               <div class="service-card">
 
-                <div class="card-icon">
-                  <i class="flaticon-salon"></i>
+                <div class="card-icon spin-img">
+                  <!-- <i class="flaticon-salon"></i> -->
+                  <img src="./assets/images/barbershop.png" alt="Barbeshop Icon" width="80" >
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Hair Cutting Style</a>
+                  <a href="#" class="card-title">Barbería</a>
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Nuestros expertos barberos te brindarán un cambio de look impresionante, ya sea que quieras un corte de cabello clásico o un estilo más moderno y atrevido.
+                </p>
+
+                <a href="assets/views/gallery.html#tattoo" class="card-btn" aria-label="more">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon vibrate-img">
+                  <!-- <i class="flaticon-shampoo"></i> -->
+                  <img src="assets/images/tattoo-machine.png" alt="Tattoo Machine Icon" width="80">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Tattoo</a>
+                </h3>
+
+                <p class="card-text">
+                  Nuestros artistas del tatuaje te ofrecen una amplia variedad de diseños personalizados para que puedas llevar contigo un arte único y de alta calidad.
                 </p>
 
                 <a href="#" class="card-btn" aria-label="more">
@@ -237,16 +290,17 @@
             <li>
               <div class="service-card">
 
-                <div class="card-icon">
-                  <i class="flaticon-shampoo"></i>
+                <div class="card-icon pulse-img">
+                  <!-- <i class="flaticon-hot-stone"></i> -->
+                  <img src="assets/images/tongue.png" alt="tongue piercing" width="80">
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Hair Washing</a>
+                  <a href="#" class="card-title">Perforaciones</a>
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Muestra tu personalidad con nuestras perforaciones corporales. Tenemos una gran variedad de joyas para complementar tu estilo.
                 </p>
 
                 <a href="#" class="card-btn" aria-label="more">
@@ -255,30 +309,8 @@
 
               </div>
             </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <i class="flaticon-hot-stone"></i>
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Body Treatments</a>
-                </h3>
-
-                <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <a href="#" class="card-btn" aria-label="more">
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
+            <!-- List items below aren't use, yet -->
+            <!-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -342,16 +374,12 @@
                 </a>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #PRICING
@@ -361,10 +389,10 @@
         style="background-image: url('./assets/images/pricing-bg.jpg')">
         <div class="container">
 
-          <h2 class="h2 section-title text-center">Awesome Pricing Plan</h2>
+          <h2 class="h2 section-title text-center">Nuestros Excelentes Precios</h2>
 
           <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+            Descubre nuestros excelentes precios para tu estilo único en Northside Studio. ¡Ponte en contacto con nosotros hoy mismo!
           </p>
 
           <div class="pricing-tab-container">
@@ -374,44 +402,49 @@
               <li>
                 <button class="filter-btn active" data-filter-btn="all">
                   <div class="btn-icon">
-                    <i class="flaticon-beauty-salon" aria-hidden="true"></i>
+                    <!-- <i class="flaticon-beauty-salon" aria-hidden="true"></i> -->
+                    <img src="assets/images/iconopeluqueria.png" alt="all icon" style="margin-inline: auto;">
                   </div>
 
-                  <p class="btn-text">All Pricing</p>
+                  <p class="btn-text">Todos los precios</p>
                 </button>
               </li>
 
               <li>
-                <button class="filter-btn" data-filter-btn="beauty-spa">
+                <button class="filter-btn" data-filter-btn="hair-cuts">
                   <div class="btn-icon">
-                    <i class="flaticon-relax" aria-hidden="true"></i>
+                    <!-- <i class="flaticon-relax" aria-hidden="true"></i> -->
+                    <img src="assets/images/hair-cutting.png" alt="hairCut icon" width="64" style="margin-inline: auto;">
+
                   </div>
 
-                  <p class="btn-text">Beauty & Spa</p>
+                  <p class="btn-text">Cortes</p>
                 </button>
               </li>
 
               <li>
-                <button class="filter-btn" data-filter-btn="body-treatments">
+                <button class="filter-btn" data-filter-btn="tattoos">
                   <div class="btn-icon">
-                    <i class="flaticon-massage" aria-hidden="true"></i>
+                    <!-- <i class="flaticon-massage" aria-hidden="true"></i> -->
+                    <img src="assets/images/skull.png" alt="Skull Icon" width="64" style="margin-inline: auto;">
                   </div>
 
-                  <p class="btn-text">Body Treatments</p>
+                  <p class="btn-text">Tattoo</p>
                 </button>
               </li>
 
               <li>
-                <button class="filter-btn" data-filter-btn="face-washing">
+                <button class="filter-btn" data-filter-btn="piercings">
                   <div class="btn-icon">
-                    <i class="flaticon-spa" aria-hidden="true"></i>
+                    <!-- <i class="flaticon-spa" aria-hidden="true"></i> -->
+                    <img src="assets/images/piercing.png" alt="Piercing Icon" width="64" style="margin-inline: auto;">
                   </div>
 
-                  <p class="btn-text">Face Washing</p>
+                  <p class="btn-text">Piercings</p>
                 </button>
               </li>
-
-              <li>
+              <!-- List items below are not used -->
+              <!-- <li>
                 <button class="filter-btn" data-filter-btn="meditations">
                   <div class="btn-icon">
                     <i class="flaticon-yoga" aria-hidden="true"></i>
@@ -429,108 +462,108 @@
 
                   <p class="btn-text">Shaving</p>
                 </button>
-              </li>
+              </li> -->
 
             </ul>
 
             <ul class="grid-list">
 
-              <li data-filter="shaving">
+              <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-1.jpg" width="90" height="90" alt="Hair Cutting & Fitting"
-                      class="img-cover">
+                    <img src="./assets/images/blue-out.png" width="90" height="90" alt="Hair Cutting & Fitting"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+                    <h3 class="h3 card-title">Blue Out</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">15-20 minutos</p>
                   </div>
 
-                  <data class="card-price" value="89">$89</data>
+                  <data class="card-price" value="25">s/25</data>
 
                 </div>
               </li>
 
-              <li data-filter="shaving">
+              <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-2.jpg" width="90" height="90" alt="Shaving & Facial"
-                      class="img-cover">
+                    <img src="./assets/images/skin-fade.png" width="90" height="90" alt="Shaving & Facial"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Shaving & Facial</h3>
+                    <h3 class="h3 card-title">Skin Fade</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="45">$45</data>
+                  <data class="card-price" value="25">s/25</data>
 
                 </div>
               </li>
 
-              <li data-filter="face-washing">
+              <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-3.jpg" width="90" height="90" alt="Hair Color & Wash"
-                      class="img-cover">
+                    <img src="./assets/images/corte-detalle.png" width="90" height="90" alt="Corte y Barba"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Hair Color & Wash</h3>
+                    <h3 class="h3 card-title">Corte con Detalle</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="35">$35</data>
+                  <data class="card-price" value="25">s/25</data>
 
                 </div>
               </li>
 
-              <li data-filter="body-treatments">
+              <li data-filter="hair-cuts">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-4.jpg" width="90" height="90" alt="Body Massage"
-                      class="img-cover">
+                    <img src="./assets/images/corte-barba.png" width="90" height="90" alt="Body Massage" style="height: 90px;"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Body Massage</h3>
+                    <h3 class="h3 card-title">Corte + Barba</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="56">$56</data>
+                  <data class="card-price" value="30">s/30</data>
 
                 </div>
               </li>
 
-              <li data-filter="beauty-spa">
+              <li data-filter="piercings">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
-                    <img src="./assets/images/pricing-5.jpg" width="90" height="90" alt="Beauty & Spa"
-                      class="img-cover">
+                    <img src="./assets/images/ombligo-piercing.png" width="90" height="90" alt="Beauty & Spa"
+                      class=""> <!-- removed class img-cover -->
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Beauty & Spa</h3>
+                    <h3 class="h3 card-title">Piercing Ombligo</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">10-15 minutos</p>
                   </div>
 
-                  <data class="card-price" value="27">$27</data>
+                  <data class="card-price" value="30">s/30</data>
 
                 </div>
               </li>
 
-              <li data-filter="face-washing">
+              <!-- <li data-filter="piercings">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -539,17 +572,17 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Facial & Face Wash</h3>
+                    <h3 class="h3 card-title">Piercing Oreja</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">15-20 minutos</p>
                   </div>
 
-                  <data class="card-price" value="63">$63</data>
+                  <data class="card-price" value="30">s/30</data>
 
                 </div>
               </li>
 
-              <li data-filter="body-treatments">
+              <li data-filter="tattoos">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -558,17 +591,17 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Backbone Massage</h3>
+                    <h3 class="h3 card-title">Tattoo 15cm</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">30-40 minutos</p>
                   </div>
 
-                  <data class="card-price" value="43">$43</data>
+                  <data class="card-price" value="80">s/80</data>
 
                 </div>
               </li>
 
-              <li data-filter="meditations">
+              <li data-filter="tattoos">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -577,15 +610,15 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Meditation & Massage</h3>
+                    <h3 class="h3 card-title">Tattoo 30cm</h3>
 
-                    <p class="card-text">Clean & simple 30-40 minutes</p>
+                    <p class="card-text">40-60 minutos</p>
                   </div>
 
-                  <data class="card-price" value="74">$74</data>
+                  <data class="card-price" value="150">s/150</data>
 
                 </div>
-              </li>
+              </li> -->
 
             </ul>
 
@@ -593,10 +626,6 @@
 
         </div>
       </section>
-
-
-
-
 
       <!-- 
         - #GALLERY
@@ -608,23 +637,45 @@
           <div class="title-wrapper">
 
             <div>
-              <h2 class="h2 section-title">Latest Photo Gallery</h2>
+              <h2 class="h2 section-title">Fotos y Galerías</h2>
 
-              <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
+              <p class="">
+                ¡Mira nuestro trabajo y descubre nuestro talento! Explora nuestra galería de imágenes y descubre las increíbles 
+                <br>
+                creaciones de nuestro equipo. Desde cortes de cabello a tatuajes, tenemos algo para todos. ¡Comienza a explorar ahora!
               </p>
             </div>
 
-            <a href="#" class="btn has-before">
-              <span class="span">Explore More Gallery</span>
+            <a href="assets/views/gallery.html" class="btn has-before">
+              <span class="span">Explora Nuestra Galería</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </a>
 
           </div>
 
-          <ul class="grid-list">
+          <div class="gallery js-flickity">
+            <div class="gallery-cell">
+              <img src="./assets/images/carrusel-3.png" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/images/carrusel-4.png" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/images/carrusel-1.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/images/carrusel-2.jpg" class="grid-item-g">
+            </div>
+            <!-- <div class="gallery-cell">
+              <img src="./assets/img-gallery/img4.jpg" class="grid-item-g">
+            </div>
+            <div class="gallery-cell">
+              <img src="./assets/img-gallery/img5.jpg" class="grid-item-g">
+            </div> -->
+          </div>
+
+          <!-- <ul class="grid-list">
 
             <li>
               <div class="gallery-card">
@@ -636,9 +687,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Hair Cutting</h3>
+                  <h3 class="h3 card-title">North Side</h3>
 
-                  <p class="card-text">Barbers & Salon Services</p>
+                  <p class="card-text">Descubre más fotos</p>
 
                   <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -659,9 +710,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Hair Cutting</h3>
+                  <h3 class="h3 card-title">North Side</h3>
 
-                  <p class="card-text">Barbers & Salon Services</p>
+                  <p class="card-text">Descubre más fotos</p>
 
                   <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -682,9 +733,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Hair Cutting</h3>
+                  <h3 class="h3 card-title">North Side</h3>
 
-                  <p class="card-text">Barbers & Salon Services</p>
+                  <p class="card-text">Descubre más fotos</p>
 
                   <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -705,9 +756,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Hair Cutting</h3>
+                  <h3 class="h3 card-title">North Side</h3>
 
-                  <p class="card-text">Barbers & Salon Services</p>
+                  <p class="card-text">Descubre más fotos</p>
 
                   <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -718,90 +769,127 @@
               </div>
             </li>
 
-          </ul>
+          </ul> -->
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #APPOINTMENT
+      <!--
+        - #TEAM
       -->
 
-      <section class="section appoin" id="appointment" aria-label="appointment">
+      <section class="section team has-bg-image has-before" id="team" aria-label="team"
+        style="background-image: url('./assets/images/pricing-bg.jpg')">
         <div class="container">
+      
+          <h2 class="h2 section-title text-center">Nuestro Equipo</h2>
+      
+          <p class="section-text text-center">
+            Conoce a nuestro equipo de profesionales!
+          </p>
+      
+          <ul class="grid-list">
+      
+            <li>
+              <div class="gallery-card"> <!-- class="gallery-card" "image-container"-->
+      
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team-1.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
 
-          <div class="appoin-card">
-
-            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
-              <img src="./assets/images/appoin-banner-1.jpg" width="250" height="774" loading="lazy" alt=""
-                class="img-cover">
-            </figure>
-
-            <div class="card-content">
-
-              <h2 class="h2 section-title">Make Appointment</h2>
-
-              <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
-              </p>
-
-              <form action="" class="appoin-form">
-
-                <div class="input-wrapper">
-                  <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
-
-                  <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                <div class="social-wrapper">
+                  <ul class="social">
+                    <li class="social--facebook"><a href="https://www.facebook.com/" target="blank"
+                        rel="noopener noreferrer"><span>Facebook</span></a></li>
+                    <li class="social--tiktok"><a href="#" target="blank" rel="noopener noreferrer"><span>Tiktok</span></a></li>
+                    <li class="social--instagram"><a href="#" target="blank" rel="noopener noreferrer"><span>Instragram</span></a></li>
+                    <li class="social--whatshap"><a href="#" target="blank" rel="noopener noreferrer"><span>Whattshap</span></a></li>
+                
+                  </ul>
                 </div>
+      
+                <!-- <div class="card-content">
+      
+                      <h3 class="h3 card-title">North Side</h3>
+      
+                      <p class="card-text">Descubre más fotos</p>
+      
+                      <a href="#" class="card-btn" aria-label="Read more">
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                      </a>
+                    </div> -->
 
-                <div class="input-wrapper">
-                  <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+              </div>
+            </li>
+      
+            <li>
+              <div class="gallery-card">
+      
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team-2.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
 
-                  <select name="category" class="input-field">
+                <div class="social-wrapper">
+                  <ul class="social">
+                    <li class="social--facebook"><a href="https://www.facebook.com/" target="blank"
+                        rel="noopener noreferrer"><span>Facebook</span></a></li>
+                    <li class="social--tiktok"><a href="#" target="blank" rel="noopener noreferrer"><span>Tiktok</span></a></li>
+                    <li class="social--instagram"><a href="#" target="blank" rel="noopener noreferrer"><span>Instragram</span></a></li>
+                    <li class="social--whatshap"><a href="#" target="blank" rel="noopener noreferrer"><span>Whattshap</span></a></li>
+                
+                  </ul>
+                </div>      
+              </div>
+            </li>
+      
+            <li>
+              <div class="gallery-card">
+      
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team-3.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
 
-                    <option value="Select category">Select category</option>
-                    <option value="Beauty & spa">Beauty & spa</option>
-                    <option value="Body massage">Body massage</option>
-                    <option value="Shaving & Facial">Shaving & Facial</option>
-                    <option value="Hair Color">Hair Color</option>
-
-                  </select>
-                </div>
-
-                <input type="date" name="date" required class="input-field date">
-
-                <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
-
-                <button type="submit" class="form-btn">
-                  <span class="span">Appointment Now</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
-
-              </form>
-
-            </div>
-
-            <figure class="card-banner img-holder" style="--width: 250; --height: 774;">
-              <img src="./assets/images/appoin-banner-2.jpg" width="250" height="774" loading="lazy" alt=""
-                class="img-cover">
-            </figure>
-
-          </div>
-
+                <div class="social-wrapper">
+                  <ul class="social">
+                    <li class="social--facebook"><a href="https://www.facebook.com/" target="blank"
+                        rel="noopener noreferrer"><span>Facebook</span></a></li>
+                    <li class="social--tiktok"><a href="#" target="blank" rel="noopener noreferrer"><span>Tiktok</span></a></li>
+                    <li class="social--instagram"><a href="#" target="blank" rel="noopener noreferrer"><span>Instragram</span></a></li>
+                    <li class="social--whatshap"><a href="#" target="blank" rel="noopener noreferrer"><span>Whattshap</span></a></li>
+                
+                  </ul>
+                </div>      
+              </div>
+            </li>
+      
+            <li>
+              <div class="gallery-card">
+      
+                <figure class="card-banner img-holder" style="--width: 422; --height: 550;">
+                  <img src="./assets/images/team-4.jpg" width="422" height="550" loading="lazy" alt="Hair Cutting"
+                    class="img-cover">
+                </figure>
+                <div class="social-wrapper">
+                  <ul class="social">
+                    <li class="social--facebook"><a href="https://www.facebook.com/" target="blank"
+                        rel="noopener noreferrer"><span>Facebook</span></a></li>
+                    <li class="social--tiktok"><a href="#" target="blank" rel="noopener noreferrer"><span>Tiktok</span></a></li>
+                    <li class="social--instagram"><a href="#" target="blank" rel="noopener noreferrer"><span>Instragram</span></a></li>
+                    <li class="social--whatshap"><a href="#" target="blank" rel="noopener noreferrer"><span>Whattshap</span></a></li>
+                
+                  </ul>
+                </div>      
+              </div>
+            </li>
+      
+          </ul>      
         </div>
       </section>
-
     </article>
   </main>
-
-
-
-
 
   <!-- 
     - #FOOTER
@@ -814,22 +902,22 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
-            Barber
-            <span class="span">Hair Salon</span>
+          <a href="#" class="logo" style="margin-left: 0px;">
+            North Side Studio
+            <span class="span">Barbería, Tattoo y Perforaciones</span>
           </a>
 
-          <form action="" class="input-wrapper">
+          <!-- <form action="" class="input-wrapper">
 
-            <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
+            <input type="email" name="email_address" placeholder="Ingresa tu Email" required class="email-field">
 
             <button type="submit" class="btn has-before">
-              <span class="span">Subscribe Now</span>
+              <span class="span">Subscribete Ahora</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
 
-          </form>
+          </form> -->
 
         </div>
 
@@ -838,27 +926,27 @@
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Quick Links</p>
+              <p class="footer-list-title">Accesos Rápidos</p>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Our Services</a>
+              <a href="#" class="footer-link has-before">Nuestros Servicios</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Meet Our Team</a>
+              <a href="#" class="footer-link has-before">Conoce a Nuestro Equipo</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Our Portfolio</a>
+              <a href="#" class="footer-link has-before">Nuestro Portafolio</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Need A Career?</a>
+              <a href="#" class="footer-link has-before">Galería</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">News & Blog</a>
+              <a href="#" class="footer-link has-before">Contáctanos</a>
             </li>
 
           </ul>
@@ -866,33 +954,33 @@
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Services</p>
+              <p class="footer-list-title">Servicios</p>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Hair Cutting</a>
+              <a href="#" class="footer-link has-before">Cortes</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Shaving & Design</a>
+              <a href="#" class="footer-link has-before">Tattoo</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Hair Colors</a>
+              <a href="#" class="footer-link has-before">Perforaciones</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Beauty & Spa</a>
+              <a href="#" class="footer-link has-before">Razurado</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Body Massages</a>
+              <a href="#" class="footer-link has-before">Tintes</a>
             </li>
 
           </ul>
-
-          <ul class="footer-list">
-
+          <!-- unordened list canceled -->
+          <!-- <ul class="footer-list">
+            
             <li>
               <p class="footer-list-title">Recent News</p>
             </li>
@@ -943,38 +1031,38 @@
               </div>
             </li>
 
-          </ul>
+          </ul> -->
 
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Contact Us</p>
+              <p class="footer-list-title">Contáctanos</p>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
 
               <address class="contact-link">
-                7528 Roberts Ave. Palm Bay, FL 32907
+                Cooperativa Virgen del rosario MZ. I lote 1
               </address>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
 
-              <a href="tel:+0123456789" class="contact-link">+012 (345) 67 89</a>
+              <a href="tel:+0123456789" class="contact-link">974 190 538</a>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-              <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
+              <span class="contact-link">Lun - Sáb, 09 am - 10 pm</span>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-              <a href="mailto:support@gmail.com" class="contact-link">support@gmail.com</a>
+              <a href="mailto:support@gmail.com" class="contact-link">NorthSideStudio@gmail.com</a>
             </li>
 
           </ul>
@@ -985,16 +1073,12 @@
 
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved.
+          &copy; 2023 <a href="#" class="copyright-link">The Frog Team</a>. All Rights Reserved.
         </p>
       </div>
 
     </div>
   </footer>
-
-
-
-
 
   <!-- 
     - #BACK TO TOP
@@ -1013,6 +1097,11 @@
   -->
   <script src="./assets/js/script.js" defer></script>
 
+  <!--
+    - flickity js
+  -->
+  <script src="./assets/js/flickity.pkgd.min.js"></script>
+  
   <!-- 
     - ionicon link
   -->
