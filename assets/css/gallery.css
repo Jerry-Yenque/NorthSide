@@ -125,7 +125,7 @@
 .haircut {
   --section-padding: 100px;
   padding-block-start: calc(var(--section-padding) + 40px);
-  margin-top: 155px;
+  margin-top: 84px;
 }
 
 .haircut::before {
@@ -133,4 +133,68 @@
   background-color: var(--eerie-black-2_85);
   mix-blend-mode: multiply;
   z-index: -1;
+}
+/**
+  * MEDIA QUERYS
+**/
+
+/**
+ * responsive for large than 575px screen
+ */
+
+ @media (min-width: 575px) {
+  /**
+   * HAIRCUT
+   */
+
+   .haircut { margin-top: 135px; padding-block-start: calc(var(--section-padding) + 80px); }
+ }
+
+/**
+ * responsive for large than 768px screen
+ */
+
+ @media (min-width: 768px) {
+  .haircut{
+    margin-top: 135px;
+  }
+ }
+
+@media (min-width: 992px) {
+  /**
+   * HAIRCUT
+   */
+
+   .haircut {
+    --section-padding: 40px; /* 150px por default */
+    margin-top: 155px;
+    padding-block-start: calc(var(--section-padding) + 100px);
+  }
+}
+
+@media (min-width: 1200px) {
+  /**
+   * CUSTOM PROPERTY
+   */
+
+   :root {
+
+    /**
+     * typography
+     */
+
+    /* --fs-40: 11rem; */
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 120px;
+
+  }
+
+  .haircut {
+    /* background-position: left; */
+    padding-block-end: 200px;
+  }
 }

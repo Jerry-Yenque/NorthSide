@@ -659,12 +659,7 @@ body {
 /*-----------------------------------*\
   #TEAM
 \*-----------------------------------*/
-.haircut::before {
-  inset: 0;
-  background-color: var(--eerie-black-2_85);
-  mix-blend-mode: multiply;
-  z-index: -1;
-}
+
 .team::before {
   inset: 0;
   background-color: var(--eerie-black-2_85);
