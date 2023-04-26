@@ -1,20 +1,25 @@
+/* Se aplica un reset de estilos a todos los elementos */
 *,
-*::before,
-::after {
+ *::before, ::after {
   margin: 0;
-  padding: 0;
+  padding: 0px;  
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
-/*Codigo que hace funcionar la galeria dinamica de galeria.html*/
+
+
+/* Se define la clase "img" para aplicar estilos a la galería de imágenes */
 .img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+  display: flex; /* se define un display flex para que los elementos se distribuyan horizontalmente */
+  flex-wrap: wrap; /* se define flex-wrap como wrap para que los elementos se distribuyan en varias líneas en caso de no caber en una sola */
+  width: 100%; /* se establece un ancho del 100% para que la galería ocupe todo el ancho disponible */
+ 
+}
+
+/* Se definen las clases para los tamaños de las imágenes según la sección */
   .img-vs1 {
     width: 20%;
     height: 35%;
+    padding: 0px;  
   }
   .img-vs2 {
     width: 20%;
@@ -28,17 +33,41 @@
 
 
   .img-width {
-    width: 33.3333333333333333333333333333333333333333%;
-    height: 30%;
+    width: 33.3333333333333333333333333333333333333333%; /* se define un ancho del 33.33% para que las imágenes se distribuyan en 3 columnas */
+    height:70%; /* se establece una altura del 30% para que las imágenes no sean demasiado grandes */
   }
   .img img:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-  transition-duration: 0.2s;
+  transition-duration: 0.2s; /* se define una transición de 0.2 segundos para que la escala se haga de forma suave */
+  }
+
+
+
   
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    
   }
   
+  .img-container img {
+    margin: 0;
+    padding: 2px;  
+    box-sizing: border-box;
+  }
+  
+  .img-container img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+  }
+
+  
+
+  /* Estilos para la sección de "teens" */
   .conteiner_teens {
     width: 100%;
     height: 1166px;
@@ -46,6 +75,7 @@
     text-align: center;
     color: white;
   }
+  /* Imagen de fondo para la sección de "teens" */
   .background-dude{
     width: 100%;
   }
@@ -57,64 +87,8 @@
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5); /* Cambia los valores para ajustar la sombra */
   }
 
-/*Codigo para los estilos del boton regresar*/
-  .draw-border {
-    box-shadow: inset 0 0 0 4px#6ed6ff;
-    color: #6ed6ff;
-    -webkit-transition: color 1s 1s;
-    transition: color 0.25s 1s;
-    position: relative;
-  }
-  .draw-border::before, .draw-border::after {
-    border: 0 solid transparent;
-    box-sizing: border-box;
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    width: 0;
-    height: 0;
-    bottom: 0;
-    right: 0;
-  }
-  .draw-border::before {
-    border-bottom-width: 4px;
-    border-left-width: 4px;
-  }
-  .draw-border::after {
-    border-top-width: 2px;
-    border-right-width: 2 px;
-  }
-  .draw-border:hover {
-    color: #fcd041;
-  }
-  .draw-border:hover::before, .draw-border:hover::after {
-    border-color: #fcd041;
-    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
-    transition: border-color 0s, width 0.25s, height 0.25s;
-    width: 100%;
-    height: 100%;
-  }
-  .draw-border:hover::before {
-    -webkit-transition-delay: 0s, 0s, 0.25s;
-            transition-delay: 0s, 0s, 0.25s;
-  }
-  .draw-border:hover::after {
-    -webkit-transition-delay: 0s, 0.25s, 0s;
-            transition-delay: 0s, 0.25s, 0s;
-  }
+
   
-  .btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    line-height: 1.5;
-    font: 700 1.2rem 'Roboto Slab', sans-serif;
-    padding: 1em 2em;
-    letter-spacing: 0.05rem;
-  }
-  .btn:focus {
-    outline: 2px dotted #55d7dc;
-  }
   
 /*-----------------------------------*\
   #REUSED
@@ -151,6 +125,9 @@
   mix-blend-mode: multiply;
   z-index: -1;
 }
+
+
+
 
 /**
   * MEDIA QUERYS
@@ -218,8 +195,19 @@
 
   }
 
+  .container2 { max-width: 1400px; margin:0 auto; 
+   
+  
+  }
+
   .haircut {
     /* background-position: left; */
     padding-block-end: 200px;
   }
 }
+
+
+
+
+
+
