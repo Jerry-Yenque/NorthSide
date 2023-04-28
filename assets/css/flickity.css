@@ -52,6 +52,7 @@ https://flickity.metafizzy.co
     background: hsla(0, 0%, 100%, 0.75);
     border: none;
     color: #333;
+    display: none;
   }
   
   .flickity-button:hover {
@@ -138,4 +139,12 @@ https://flickity.metafizzy.co
   
   .flickity-page-dots .dot.is-selected {
     opacity: 1;
+  }
+
+  /* MEDIA QUERYS */
+
+  @media (min-width: 768px) {
+    .flickity-button {
+      display:block;
+    }
   }
