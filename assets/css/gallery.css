@@ -164,6 +164,7 @@
   margin-bottom: 70px;
 }
 .card {
+  overflow-x: hidden;
   position: relative;
   list-style: none;
   gap: 30px;
