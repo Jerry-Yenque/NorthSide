@@ -156,10 +156,12 @@
   background-color: #1a1e23;
 }
 .card-container {
+  flex-wrap: wrap;
   display: flex;
   gap: 30px;
   width: 100%;
   justify-content: center;
+  align-items: center;
   margin-top: 70px;
   margin-bottom: 70px;
 }
@@ -190,7 +192,7 @@
   transform-origin: bottom;
   transform: scale(1) translateZ(0);
   transition: .3s ease;
-  
+  width: 100%; /* Añade esta propiedad */
 }
 .card:hover .card-background {
   transform: scale(1.15) translateZ(0);
@@ -203,6 +205,33 @@
 .card-container:hover > .card:not(:hover) .card-category {
   filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
 }
+
+
+/*
+.card-container:hover > .card:not(:hover) .card-background,
+.card-container:hover > .card:not(:hover) .card-category {
+  filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+} */
+
+
+/* .card-container:hover > .card:not(:hover) .card-background,
+.card-container:hover > .card:not(:hover) .card-category {
+  filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-container:not(:hover) > .card .card-background,
+.card-container:not(:hover) > .card .card-category {
+  filter: none;
+}
+
+.card-container:hover .card:not(:hover) .card-background,
+.card-container:hover .card:not(:hover) .card-category {
+  filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+} */
+
+
+
+
 .content {
   top: 50%;
   left: 0;
@@ -270,6 +299,7 @@
   }
 
     .logos-galeria{
+      overflow-x: hidden;
       width: 14%;
       }
    
@@ -540,22 +570,10 @@
     display: block;
   }
 
-  .card-container {
-    display: flex;
-    gap: 30px;
-    width: 70vw;
-    height: auto;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-  .card {
-    position: relative;
 
-    gap: 30px;
-    width: 220px;
-    transition: .3s ease;
-  }
+  
+
+
 
 }
 
