@@ -995,6 +995,98 @@ a.contact-link:is(:hover, :focus) { color: var(--white); }
 }
 /* end Jerry */
 
+/* version 02/05/2023 */
+.wrapper-social {
+  display: flex;
+  justify-content: space-around;
+  border-block-start: 1px solid var(--white_10);
+  /* display: inline-flex; */
+  /* margin: auto; */
+  /* list-style: none; */
+  /* padding: -50px; */
+}
+.wrapper-social .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-social .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-social .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-social .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper-social .icon:hover span,
+.wrapper-social .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper-social .facebook:hover,
+.wrapper-social .facebook:hover .tooltip,
+.wrapper-social .facebook:hover .tooltip::before {
+  background: #1877F2;
+  color: #ffffff;
+}
+.wrapper-social .tiktok:hover,
+.wrapper-social .tiktok:hover .tooltip,
+.wrapper-social .tiktok:hover .tooltip::before {
+  background: #00070b;
+  color: #ffffff;
+}
+.wrapper-social .instagram:hover,
+.wrapper-social .instagram:hover .tooltip,
+.wrapper-social .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+.wrapper-social .whatsapp:hover,
+.wrapper-social .whatsapp:hover .tooltip,
+.wrapper-social .whatsapp:hover .tooltip::before {
+  background: #25D366;
+  color: #ffffff;
+}
+.wrapper-social .youtube:hover,
+.wrapper-social .youtube:hover .tooltip,
+.wrapper-social .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+/* end version 02/05/2023 */
 
 
 /*-----------------------------------*\
