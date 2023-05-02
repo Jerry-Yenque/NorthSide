@@ -100,20 +100,22 @@
   }
   
   .grid-item-gallery{
-    border-radius: 16px;
+    border-radius: 10px;
     width: 80vw;
     height: auto;
     justify-items: center;
     align-items: center;
+    border: 4px solid rgb(240, 240, 240);
   /*  box-shadow: 1px 1px 2px 3px #ccc; */
   }
   
   .grid-item-gallery2{
-    border-radius: 16px;
-    width: 100vw;
+    border-radius: 10px;
+    width: 85vw;
     height: auto;
     justify-items: center;
     align-items: center;
+    border: 4px solid rgb(240, 240, 240);
   /*  box-shadow: 1px 1px 2px 3px #ccc; */
   }
   
@@ -295,7 +297,7 @@
     
     -webkit-text-stroke:2.5px   #E43D4C;
     color:   #092f77;
-    font-size: 11rem; line-height: 5rem;
+    font-size: 8rem; line-height: 5rem;
   }
 
     .logos-galeria{
@@ -334,6 +336,7 @@
 
   .galeria-carrusel {
     display: block;
+    
   }
 
   .img-container {
