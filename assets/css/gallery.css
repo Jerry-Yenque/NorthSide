@@ -305,7 +305,7 @@
       width: 14%;
       }
    
-   .haircut { margin-top: 70px; padding-block-start: calc(var(--section-padding) + 80px); }
+   .haircut { margin-top: 100px; padding-block-start: calc(var(--section-padding) + 0px); }
    .container2 { max-width: 340; margin:0 auto; }
   .img-vs1 {
     width: 100%;

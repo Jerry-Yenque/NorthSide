@@ -409,6 +409,11 @@ body {
   padding-block-start: calc(var(--section-padding) + 40px);
   background-position: left;
 }
+.hero-gallery {
+  --section-padding: 100px;
+  padding-block-start: calc(var(--section-padding) + 40px);
+  background-position: center;
+}
 
 .hero::before {
   inset: 0;
@@ -1708,7 +1713,11 @@ ul.social span {
    */
 
   .hero {
-    background-position: left;
+    background-position: center; /* 50% 30%; */
+    padding-block-end: 200px;
+  }
+  .hero-gallery {
+    background-position: 50% 30%; /* 50% 30%; */
     padding-block-end: 200px;
   }
 
