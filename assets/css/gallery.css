@@ -413,9 +413,9 @@
 
 
  @media (min-width: 768px) {
-  .haircut{
+  /* .haircut{ */
     /* margin-top: 135px; */
-  }
+  /* } */
 
   .sectioner-banner {max-width: 100%;}
 
