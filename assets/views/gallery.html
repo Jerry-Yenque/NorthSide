@@ -26,20 +26,20 @@
   -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/gallery.css">
-
+  <link rel="stylesheet" href="../css/flickity2.css" media="screen">
   <!--
     -Flickity
   -->
-  <!-- <link rel="stylesheet" href="./assets/css/flickity.css" media="screen"> -->
+  <!-- <link rel="stylesheet" href="../css/flickity.css" media="screen"> -->
   
   <!-- 
     - google font link
   -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
-    rel="stylesheet"> -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;700&display=swap"
+    rel="stylesheet">
 
   <!-- 
     - flaticon
@@ -48,10 +48,10 @@
   <link 
   href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;700&display=swap"
   rel="stylesheet">
+
   <!--
     - font awesome
   -->
-  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
   <!-- 
@@ -147,11 +147,11 @@
 
     <div class="header-bottom" data-header>
       <div class="container">
-        <figure class="card-banner img-holder" style="--width: 90; --height: 90; border-radius: 50%;">
+        <!-- <figure class="card-banner img-holder" style="--width: 90; --height: 90; border-radius: 50%;">
           <img src="../images/logo.png" width="70" height="70" alt="Hair Cutting & Fitting"
             class=""> 
-        </figure>
-        <a href="#" class="logo" style="margin-left: 100px; position: absolute;">
+        </figure> -->
+        <a href="#" class="logo">
           North Side Studio
           <span class="span">Barbería, Tatuajes y Piercings</span>
         </a>
@@ -164,7 +164,7 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Cortes</a>
+              <a href="#haircut" class="navbar-link" data-nav-link>Cortes</a>
             </li>
 
             <li class="navbar-item">
@@ -216,93 +216,162 @@
         </div>
       </section>
 
-    <section class="section" style="background-color: #3b3434;" > <!--  -->
+    <section class="section haircut" id='haircut' style="background-color: #E3E3E3;" >
       
-      <div class="container2">
-        <img class="border-shadow-image" src="../images/BannerCortes.jpg" width="100%">
+      <div class="container2" > <!-- style="margin-top: -40px;margin-bottom: -170px;"-->
+        <!-- <img class="border-shadow-image" src="../images/BannerCortes.jpg" width="100%"> -->
         <div class="sectioner-banner">
-          <img src="../images/logo1.png">
-          <h2  class="section-title">Galería de Cortes</h2>
-          <img src="../images/logo1.png">
+          <img class="logos-galeria" src="../images/logo1.png">
+          <h2  class="section-title">Cortes</h2>
+          <img  class="logos-galeria" src="../images/logo1.png">
         </div>
-          
+        
+        <div style="background-color: #302f2f; padding-top: 20px; padding-bottom: 80px;" >
         <div class="img-container">
         <div class="img">
+
+          <img src="../images-galeria/foto_corte_7_horizontal.jpg" alt="" class="img-width iw11">
+          <img src="../images-galeria/foto_corte_8_horizontal.jpg" alt="" class="img-width iw14">
           
-          <!-- <img src="../images/blue-out.png" alt="" class="img-vs1 i8">
-          <img src="../images/skin-fade.png" alt="" class="img-vs1 i9">
-          <img src="../images/blue-out.png" alt="" class="img-vs1 i10">
-          <img src="../images/skin-fade.png" alt="" class="img-vs1 i12">
-          <img src="../images/blue-out.png" alt="" class="img-vs1 i13">
-          <img src="../img-gallery/gallery-1.jpg" alt="" class="img-width iw11">
-          <img src="../img-gallery/gallery-2.jpg" alt="" class="img-width iw14">
-          <img src="../img-gallery/gallery-1.jpg" alt="" class="img-width iw15"> -->
-          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
-
-
-          <img src="../images-galeria/foto_corte_6.jpg" alt="" class="img-vs1 i8">
-          <img src="../images-galeria/foto_corte_2.jpg" alt="" class="img-vs1 i9">
-          <img src="../images-galeria/foto_corte33.jpg" alt="" class="img-vs1 i10">
-          <img src="../images-galeria/foto_corte_4.jpg" alt="" class="img-vs1 i12">
-          <!-- <img src="../images-galeria/foto_corte_5.jpg" alt="" class="img-vs1 i13"> -->
-
-          <img src="../images-galeria/foto_corte_v1.jpg" alt="" class="img-width iw11">
-          <img src="../images-galeria/foto_corte_v2.jpg" alt="" class="img-width iw14">
-          <!-- <img src="../images-galeria/foto_corte_v5.jpg" alt="" class="img-width iw15"> -->
-
           <img src="../images-galeria/foto_corte_1.jpg" alt="" class="img-vs1 i8">
-          <img src="../images-galeria/foto_corte7.jpg" alt="" class="img-vs1 i9">
-          <img src="../images-galeria/foto_corte_8.jpg" alt="" class="img-vs1 i10">
-          <img src="../images-galeria/blue-out.png" alt="" class="img-vs1 i12">
-          <!-- <img src="../images-galeria/foto_corte_v6.jpg" alt="" class="img-vs1 i13"> -->
+          <img src="../images-galeria/foto_corte_2.jpg" alt="" class="img-vs1 i9">
+          <img src="../images-galeria/foto_corte_3.jpg" alt="" class="img-vs1 i10">
+          <img src="../images-galeria/foto_corte_4.jpg" alt="" class="img-vs1 i12">
+        
 
-          <img src="../images-galeria/foto_corte_v3.jpg" alt="" class="img-width iw11">
-          <img src="../images-galeria/foto_corte_v4.jpg" alt="" class="img-width iw14">
-          <!-- <img src="../images-galeria/foto_corte_v7.jpg" alt="" class="img-width iw15"> -->
+          <img src="../images-galeria/foto_corte_1_horizontal.jpg" alt="" class="img-width iw11">
+          <img src="../images-galeria/foto_corte_2_horizontal.jpg" alt="" class="img-width iw14">
+         
 
-          <!-- <img src="../images-galeria/team-1.jpg" alt="" class="img-vs1 i8">
-          <img src="../images-galeria/team-2.jpg" alt="" class="img-vs1 i9">
-          <img src="../images-galeria/team-3.jpg" alt="" class="img-vs1 i10">
-          <img src="../images-galeria/team-4.jpg" alt="" class="img-vs1 i13">
-          <img src="../images-galeria/team-4.jpg" alt="" class="img-vs1 i13"> -->
+          <img src="../images-galeria/foto_corte_5.jpg" alt="" class="img-vs1 i8">
+          <img src="../images-galeria/foto_corte_6.jpg" alt="" class="img-vs1 i9">
+          <img src="../images-galeria/foto_corte_7.png" alt="" class="img-vs1 i10">
+          <img src="../images-galeria/foto_corte_8.jpg" alt="" class="img-vs1 i12">
+       
+          <img src="../images-galeria/foto_corte_3_horizontal.jpg" alt="" class="img-width iw11">
+          <img src="../images-galeria/foto_corte_4_horizontal.jpg" alt="" class="img-width iw14">
+     
+          <img src="../images-galeria/foto_corte_9.png" alt="" class="img-vs1 i8">
+          <img src="../images-galeria/foto_corte_10.png" alt="" class="img-vs1 i9">
+          <img src="../images-galeria/foto_corte_11.jpg" alt="" class="img-vs1 i10">
+          <img src="../images-galeria/foto_corte_12.jpg" alt="" class="img-vs1 i12">
+
+          <img src="../images-galeria/foto_corte_5_horizontal.jpg" alt="" class="img-width iw11">
+          <img src="../images-galeria/foto_corte_6_horizontal.png" alt="" class="img-width iw14">
+
+          <img src="../images-galeria/foto_corte_9_horizontal.jpg" alt="" class="img-width iw11">
+          <img src="../images-galeria/foto_corte_10_horizontal.jpg" alt="" class="img-width iw14">
         </div>
+
+        
         </div>  
+      
+
+
+
+       
+        <div class="galeria-carrusel">
+
+        <div class="gallery2 js-flickity">
+          <div class="">
+            <img src="../images-galeria/foto_corte_1.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_2.jpg" class="grid-item-gallery">
+          </div>
+          <div class=""> <!-- gallery-cell removed-->
+            <img src="../images-galeria/foto_corte_3.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_4.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_5.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_6.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_7.png" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_8.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_9.png" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_10.png" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_11.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_12.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_13.jpg" class="grid-item-gallery">
+          </div>
+      
+        </div>
+        <div class="gallery2 js-flickity" style="margin-top: 70px;">
+          <div class="">
+            <img src="../images-galeria/foto_corte_1_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_2_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class=""> <!-- gallery-cell removed-->
+            <img src="../images-galeria/foto_corte_3_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_4_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_5_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_6_horizontal.png" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_7_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_8_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_9_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_10_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+          <div class="">
+            <img src="../images-galeria/foto_corte_11_horizontal.jpg" class="grid-item-gallery2">
+          </div>
+        </div>
       </div>
-      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
+        </div>
+
+    </div>
     </section>
 
-    <section class="section tattoo" id="tattoo" style="background-color:#5c5c5c;" >
+
+
+    <section class="section haircut" id="tattoo" style="background-color:  #3b3939;" >
       <div class="container2">
-        <img class="border-shadow-image" src="../images/bannerTatuaje.jpg" width="100%" style="margin-top: -50px;">
+        <!-- <img class="border-shadow-image" src="../images/bannerTatuaje.jpg" width="100%" style="margin-top: -50px;"> -->
         <div class="sectioner-banner">
-          <img src="../images/logo2.png" width="64px">
-          <h2  class="section-title text-center">Galeria de Tatuajes</h2>
-          <img src="../images/logo2.png" width="64px">
+          <img class="logos-galeria" src="../images/logo2.png" width="64px">
+          <h2  class="section-title text-center">Tatuajes</h2>
+          <img class="logos-galeria" src="../images/logo2.png" width="64px">
         </div>
+
+
+        <div style="background-color: #302f2f; padding-top: 20px; padding-bottom: 80px;" >
         <div class="img-container">
         <div class="img">
-          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i8">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i9">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i10">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i12">
 
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i8">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i9">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i10">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-tatto i12"> -->
-        
-          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-width iw11">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw14">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw15">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+          
 
           <img src="../images-tatuajes/foto_tatuaje_1.jpg" alt="" class="img-vs2 i8">
           <img src="../images-tatuajes/foto_tatuaje2.jpg" alt="" class="img-vs2 i9">
@@ -324,47 +393,190 @@
           <img src="../images-tatuajes/foto_tatuaje14.jpg" alt="" class="img-vs2 i13">
         </div>
       </div>
+
+
+      <div class="galeria-carrusel">
+
+        <div class="gallery2 js-flickity">
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje_1.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje2.jpg" class="grid-item-gallery">
+          </div>
+          <div class=""> <!-- gallery-cell removed-->
+            <img src="../images-tatuajes/foto_tatuaje3.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje4.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje5.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje6.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje7.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje8.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje9.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje10.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje11.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje12.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje13.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../images-tatuajes/foto_tatuaje14.jpg" class="grid-item-gallery">
+          </div>
+        </div>
+     
+      </div>
+
+</div>
+
       </div>
       
+    
+    </section>
+
+    <section class="section haircut" id="piercing" style="background-color: #E3E3E3;" >
+      <div class="container2">
+        <!-- <img class="border-shadow-image" src="../images/bannerPiercing.jpg" width="100%"> -->
+        <div class="sectioner-banner">
+          <img class="logos-galeria" src="../images/logo3.png">
+          <h2  class="section-title text-center">Piercings</h2>
+          <img class="logos-galeria" src="../images/logo3.png">
+        </div>
+
+
+        <div style="background-color: #302f2f; padding-top: 20px; padding-bottom: 80px;" >
+        <div class="img-container">
+        <div class="img">
+          <img src="../img-piercings/foto-piercing1.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing2.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing3.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing4.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing5.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing6.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing7.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing8.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing9.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing10.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing11.jpg" alt="" class="img-vs1 i8">
+   
+          <img src="../img-piercings/foto-piercing12.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing13.jpg" alt="" class="img-vs1 i8">
+          <img src="../img-piercings/foto-piercing14.jpg" alt="" class="img-vs1 i8">
+        </div>
+      </div>
+
+
+      <div class="galeria-carrusel">
+
+        <div class="gallery2 js-flickity">
+          <div class="">
+            <img src="../img-piercings/foto-piercing1.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing2.jpg" class="grid-item-gallery">
+          </div>
+          <div class=""> <!-- gallery-cell removed-->
+            <img src="../img-piercings/foto-piercing3.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing4.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing5.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing6.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing7.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing8.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing9.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing10.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing11.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing12.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing13.jpg" class="grid-item-gallery">
+          </div>
+          <div class="">
+            <img src="../img-piercings/foto-piercing14.jpg" class="grid-item-gallery">
+          </div>
+        </div>
+     
+      </div>
+
+</div>
+
+      </div>
       <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
     </section>
 
-    <section class="section piercing" id="piercing" style="background-image: url('../images/footer-bg.png'); background-size: cover;">
-      <div class="container2">
-        <img class="border-shadow-image" src="../images/bannerPiercing.jpg" width="100%">
-        <div class="sectioner-banner">
-          <img src="../images/logo3.png">
-          <h2  class="section-title text-center">Galeria de Piercings</h2>
-          <img src="../images/logo3.png">
+
+    <!-- <section class="hero-section">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje_1.jpg);"></div>
+          <div class="content">
+            <div class="card-category">xxxxxxxx</div>
+            <h3 class="card-heading">Titulo</h3>
+          </div>
         </div>
-        <div class="img-container">
-        <div class="img">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i8">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i9">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i10">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i12">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i13">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i8">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i9">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i10">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i12">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i13">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i8">
-          <img src="../images/ombligo-piercing.png" alt="" class="img-vs1 i9">
-   
-          <!-- <img src="../images/pricing-bg.jpg" alt="" class="img-width iw11">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw14">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-width iw15">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i16">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i17">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i18">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i19">
-          <img src="../images/pricing-bg.jpg" alt="" class="img-vs2 i20"> -->
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje2.jpg);"></div>
+          <div class="content">
+            <div class="card-category">xxxxx</div>
+            <h3 class="card-heading">Titulo</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje3.jpg);"></div>
+          <div class="content">
+            <div class="card-category">xxxxx</div>
+            <h3 class="card-heading">Titulo</h3>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje4.jpg);"></div>
+          <div class="content">
+            <div class="card-category">xxxxx</div>
+            <h3 class="card-heading">Titulo</h3>
+          </div>
         </div>
       </div>
-      </div>
-      <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
-    </section>
+    </section>   -->
+
+
+
+
+
+
   </main>
 
   <!-- 
@@ -382,22 +594,45 @@
             North Side Studio
             <span class="span">Barbería, Tattoo y Perforaciones</span>
           </a>
-
-          <div class="social-footer">
+          
+          <!-- Jerry old social -->
+          <!-- <div class="social-footer">
             <div class="social-cover"><a href="#"><ion-icon  name="logo-tiktok"></ion-icon></a></li></div>
             <div class="social-cover"><a href="https://web.facebook.com/profile.php?id=100069787795818" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li></div>
             <div class="social-cover"><a href="https://www.instagram.com/northside.barbershop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li></div>   
-            <div class="social-cover"><a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li></div>   
-            <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
+            <div class="social-cover"><a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li></div>    -->
+              <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
                
-                <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+              <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
               
-                <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+              <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
               <!-- <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li> -->
-                <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
-              
+              <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
+          <!-- </div> -->
+          <!-- end Jerry -->
+          <ul class="wrapper-social">
+            <li class="icon tiktok">
+              <span class="tooltip">Tiktok</span>
+              <span><i class="fab fa-tiktok"></i></span>
+            </li>
+
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </li>
             
-          </div>
+            <li class="icon whatsapp">
+              <span class="tooltip">Whatsapp</span>
+              <span><i class="fab fa-whatsapp"></i></span>
+            </li>
+            
+          </ul>
+
 
           <!-- <form action="" class="input-wrapper">
 
@@ -565,7 +800,7 @@
     - custom js link
   -->
   <script src="../js/gallery.js" defer></script>
-
+  <script src="../js/flickity.pkgd.min.js"></script>
   <!--
     - flickity js
   -->
