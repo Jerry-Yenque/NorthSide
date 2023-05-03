@@ -305,8 +305,19 @@
       width: 14%;
       }
    
-   .haircut { padding-block-start: calc(var(--section-padding) + 0px); } /* margin-top: 100px;  */
-   .container2 { max-width: 340; margin:0 auto; }
+   .haircut { padding-block-start: calc(var(--section-padding) + 0px); 
+  
+       padding-block-end: 30px; /* 200px */
+  
+  
+  } /* margin-top: 100px;  */
+   .container2 { max-width: 340;  
+     margin-top: -90px;
+    margin-right: auto;
+    margin-bottom: -170px;
+    margin-left: auto;
+       }
+  
   .img-vs1 {
     width: 100%;
     height: auto;
@@ -367,10 +378,16 @@
       width: 12%;
       }
    
-   .haircut { padding-block-start: calc(var(--section-padding) + 80px); } /* margin-top: 135px; */
+   .haircut { padding-block-start: calc(var(--section-padding) + 80px);  padding-block-end: 30px; /* 200px */ } /* margin-top: 135px; */
 
 
-  .container2{ max-width: 575px; margin:0 auto; }
+  .container2{ max-width: 575px;    
+     margin-top: -150px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+       }
+  
    .img-vs1 {
     width: 100%;
     height: auto;
@@ -432,7 +449,12 @@
     width: 10%;
     }
 
-  .container2{ max-width: 768px; margin:0 auto; }
+  .container2{ max-width: 768px;     
+    margin-top: -150px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+       }
 .img-vs1 {
   width: 50%;
   height: auto;
@@ -468,10 +490,15 @@
 
    .haircut {
     --section-padding: 0px; /* 150px por default */
-    /* margin-top: 155px; */
+    padding-block-end: 30px; /* 200px */
     padding-block-start: calc(var(--section-padding) + 100px);
   }
-.container2{ max-width: 992px; margin:0 auto; }
+.container2{ max-width: 992px;    
+   margin-top: -90px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+     }
 
 
 
@@ -553,8 +580,15 @@
     padding: 0px;  
   }
 
-  .container2 { max-width: 1400px; margin:0 auto; 
-   
+  .container2 { max-width: 1400px; 
+    
+    
+    margin-top: -90px;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+  
+  
   
   }
 
@@ -562,7 +596,7 @@
 
   .haircut {
     /* background-position: left; */
-    padding-block-end: 100px; /* 200px */
+    padding-block-end: 10px; /* 200px */
   }
 
   .galeria-carrusel {
