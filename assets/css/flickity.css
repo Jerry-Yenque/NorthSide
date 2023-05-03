@@ -9,7 +9,7 @@ https://flickity.metafizzy.co
   .flickity-enabled:focus { outline: none; }
   
   .flickity-viewport {
-    margin-left: 0 !important;
+    margin-left: -10px !important;
   
     overflow: hidden;
     position: relative;
