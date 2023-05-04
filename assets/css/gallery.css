@@ -353,6 +353,29 @@
   .img-container {
     display: none;
   }
+  .banner-corte { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+  
+  }
+  
+  .banner-tatuaje { 
+  
+    width: 100%;
+    height: auto;
+    margin-top: -130px;
+  
+  }
+  
+  .banner-piercing { 
+  
+    width: 100%;
+    height: auto;
+    margin-top: -130px;
+  }
+  
   
 }
 
@@ -386,6 +409,8 @@
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
+
+    padding-bottom: 0px;
        }
   
    .img-vs1 {
@@ -419,8 +444,31 @@
     align-items: center;
   /*  box-shadow: 1px 1px 2px 3px #ccc; */
   }
-  
+  .banner-corte { 
 
+    width: 100%;
+    height: auto;
+    margin-top: -180px;
+  
+  }
+  
+  .banner-tatuaje { 
+  
+    width: 100%;
+    height: auto;
+    margin-top: -210px;
+  
+  }
+  
+  .banner-piercing { 
+  
+    width: 100%;
+    height: auto;
+    margin-top: -210px;
+  
+  }
+  
+  
 
  }
 
@@ -479,6 +527,40 @@
 .img-container {
   display: block;
 }
+
+
+
+
+.banner-corte { 
+
+  width: 100%;
+  height: auto;
+  margin-top: -180px;
+
+}
+
+.banner-tatuaje { 
+
+  width: 100%;
+  height: auto;
+  margin-top: -210px;
+
+}
+
+.banner-piercing { 
+
+  width: 100%;
+  height: auto;
+  margin-top: -210px;
+
+}
+
+
+
+
+
+
+
  }
 
  
@@ -539,6 +621,33 @@
    line-height: 5rem;
   }
 
+
+  .banner-corte { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+
+  }
+  
+  .banner-tatuaje { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -130px;
+
+  }
+  
+  .banner-piercing { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -130px;
+
+  }
+
+  
+
   
 }
 
@@ -583,8 +692,9 @@
   .container2 { max-width: 1400px; 
     
     
-    margin-top: -90px;
+    /* margin-top: -90px; */
 margin-right: auto;
+
 margin-bottom: 0;
 margin-left: auto;
   
@@ -608,7 +718,30 @@ margin-left: auto;
   }
 
 
+
+  .banner-corte { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+
+  }
   
+  .banner-tatuaje { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -110px;
+
+  }
+  
+  .banner-piercing { 
+
+    width: 100%;
+    height: auto;
+    margin-top: -110px;
+
+  }
 
 
 
