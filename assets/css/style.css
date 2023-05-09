@@ -1404,11 +1404,9 @@ ul.social span {
     max-width: 25ch;
   }
 
+  /*---------------------------gallery.html------------------------------------*/
+  .haircut > .container { max-width: 575px;}
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
@@ -1505,6 +1503,9 @@ ul.social span {
    */
 
   .footer-list:is(:nth-child(3), :nth-child(4)) { grid-column: auto; }
+
+    /*----gallery.html------------------------------*/
+    .haircut > .container { max-width: 868px; }
 
 }
 
@@ -1654,6 +1655,10 @@ ul.social span {
     margin-inline: 70px;
   }
 
+  /*----gallery.html------------------------------*/
+  .haircut { padding-block-start: 95px;}
+  .haircut > .container { max-width: 992px; }
+
 }
 
 
@@ -1771,5 +1776,12 @@ ul.social span {
    */
 
   .back-top-btn { padding: 15px; }
+
+  /*-------gallery.html---------------------------*/
+  /**
+   * HAIRCUT
+   */
+
+   .haircut > .container { max-width: 1400px;}
 
 }
