@@ -155,6 +155,41 @@
   -webkit-text-stroke: 2px #63c0eb;
   color: #092f77;
   /* color: black; */
+  /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #186392, 0 0 70px #186392, 0 0 80px #186392, 0 0 100px #186392, 0 0 150px #186392; */
+}
+
+.neon-effect {
+  text-shadow: 0 0 10px #fff;
+  animation: neon-animation 5s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes neon-animation {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #092f77, 0 0 70px #092f77, 0 0 80px #092f77, 0 0 100px #092f77, 0 0 150px #092f77;
+  }
+  1% {
+    text-shadow: none;
+  }
+  3% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #092f77, 0 0 70px #092f77, 0 0 80px #092f77, 0 0 100px #092f77, 0 0 150px #092f77;
+  }
+  5% {
+    text-shadow: none;
+  }
+  7% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #092f77, 0 0 70px #092f77, 0 0 80px #092f77, 0 0 100px #092f77, 0 0 150px #092f77;
+  }
+  18% {
+    text-shadow: none;
+  }
+  /* Repite el patrón de text-shadow y sin text-shadow con porcentajes adecuados */
+  60% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #092f77, 0 0 70px #092f77, 0 0 80px #092f77, 0 0 100px #092f77, 0 0 150px #092f77;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #092f77, 0 0 70px #092f77, 0 0 80px #092f77, 0 0 100px #092f77, 0 0 150px #092f77;
+  }
 }
 
 
@@ -163,7 +198,10 @@
 
 
 
-/*Css para la seccion de galeria que  sombrea y difumina las fotos*/
+
+
+
+/*Css para la seccion de - que  sombrea y difumina las fotos*/
 
 .hero-section {
   display: flex;
