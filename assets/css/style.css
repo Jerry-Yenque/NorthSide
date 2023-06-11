@@ -1203,7 +1203,7 @@ a.contact-link:is(:hover, :focus) {
   bottom: 70px;
   /* box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4); */
   z-index: 5;
-  /* display: none;  */
+  display: none;
 }
 
 .social-nav li {
@@ -1797,10 +1797,12 @@ ul.social span {
     max-width: 780px;
   }
 
-  /* agregado */
-  /* .logo { margin-left: -220px; } */
-  /* .logo-4k { width: 520px; height: 310px;} */
-  /* .logo-4k { max-width: 700px;} */
+  .social-nav {
+    display: block;
+  }
+
+  ;
+
   .logo-4k {
     min-width: 520px;
     max-height: 310px;
