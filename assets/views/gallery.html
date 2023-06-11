@@ -9,7 +9,7 @@
   <!-- 
     - primary meta tags
   -->
-  <title>North Side Studio</title>
+  <title>North Side Galeria</title>
   <meta name="title" content="North Side Studio">
   <meta name="description" content="North Side Studio Proyect is a barbershop website build on HTML + CSS and Mr. JavaScript.
   Implement by The Frog team:
@@ -22,42 +22,34 @@
   <link rel="shortcut icon" href="../../favicon.svg" type="image/svg+xml">
 
   <!-- 
-    - custom css link
+    - custom css link, a revisión su posible fusión de ambos estilos
   -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/gallery.css">
-  <link rel="stylesheet" href="../css/flickity2.css" media="screen">
+
   <!--
     -Flickity
   -->
-  <!-- <link rel="stylesheet" href="../css/flickity.css" media="screen"> -->
-  
+  <link rel="stylesheet" href="../css/flickity2.css" media="screen">
+
   <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
+  <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;700&display=swap"
     rel="stylesheet">
-
-  <!-- 
-    - flaticon
-  -->
-  <link rel="stylesheet" href="../css/flaticon.min.css">
-  <link 
-  href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;700&display=swap"
-  rel="stylesheet">
 
   <!--
     - font awesome
   -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
   <!-- 
     - preload images
   -->
-  <!-- <link rel="preload" as="image" href="./assets/images/hero.jpg"> -->
+  <link rel="preload" as="image" href='../images/hero-2.jpg'>
 
 </head>
 
@@ -66,20 +58,20 @@
   <!-- 
     - #HEADER
   -->
-  <div class="social-nav" hidden>
+  <div class="social-nav">
     <ul>
       <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
-        <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
-        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li> 
-        <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
-        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
-        <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
-        <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
-        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+      <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+      <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+      <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
+      <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
     </ul>
   </div>
-  
+
   <header class="header">
 
     <div class="header-top">
@@ -89,7 +81,7 @@
 
           <li class="header-top-item">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-            
+
             <p class="item-title">Llámanos :</p>
 
             <a href="tel:01234567895" class="item-link">(+51)934 864 278</a>
@@ -111,7 +103,7 @@
                   <ion-icon name="logo-tiktok"></ion-icon>
                 </a>
               </li>
-              
+
               <li>
                 <a href="https://www.instagram.com/northside.barbershop/" class="social-link" target="_blank">
                   <ion-icon name="logo-instagram"></ion-icon>
@@ -131,7 +123,8 @@
               </li> -->
 
               <li>
-                <a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" class="social-link" target="_blank">
+                <a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0"
+                  class="social-link" target="_blank">
                   <!-- <ion-icon name="chatbubble-ellipses-outline"></ion-icon> -->
                   <ion-icon name="logo-whatsapp"></ion-icon>
                 </a>
@@ -194,389 +187,551 @@
         - #HERO
       -->
 
-      <section class="section hero-gallery has-before has-bg-image" id="home" aria-label="home"
-        style="background-image: url('../images/hero-2.jpg')">
-        <div class="container">
-          <br>
-          <br>
-          <br>
-          <h1 class="h1">Galería de Nuestros trabajos</h1> <!-- hero-title -->
-          <!-- <img src="assets/images/logo-4k-1.png" alt="logo" class="logo-4k"> -->
+    <section class="section hero-gallery has-before has-bg-image" id="home" aria-label="home"
+      style="background-image: url('../images/hero-2.jpg')">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1 class="h1">Galería de Nuestros trabajos</h1> <!-- hero-title -->
 
-          <p class="hero-text">
-            "Estilo, arte y actitud. Visitanos Transforma tu estilo con Northside Studio. El lugar donde la creatividad se encuentra con el arte corporal."
-          </p>
+        <p class="hero-text">
+          "Estilo, arte y actitud. Visitanos Transforma tu estilo con Northside Studio. El lugar donde la creatividad se
+          encuentra con el arte corporal."
+        </p>
 
-          <a href="#services" class="btn has-before">
-            <span class="span">Explora más contenido</span>
+        <a href="#haircut" class="btn has-before">
+          <span class="span">Explora más contenido</span>
 
-            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-          </a>
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+      </div>
+    </section>
 
-        </div>
-      </section>
+    <section class="section haircut" id='haircut'>
 
-    <section class="section haircut" id='haircut' style="background-color: #E3E3E3;" >
-      
-      <div class="container2" > <!-- style="margin-top: -40px;margin-bottom: -170px;"-->
+      <div class="container">
         <!-- <img class="border-shadow-image" src="../images/BannerCortes.jpg" width="100%"> -->
         <div class="sectioner-banner">
-          <img class="logos-galeria" src="../images/logo1.png">
-          <h2  class="section-title">Cortes</h2>
-          <img  class="logos-galeria" src="../images/logo1.png">
+          <!-- <img class="logos-galeria" src="../images/logo1.png"> -->
+          <svg class="logos-galeria" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.998 511.998" xml:space="preserve">
+            <g>
+              <path style="fill:#58595B;" d="M256.569,8.644L256.569,8.644c-5.875,0-11.556,0.808-16.964,2.281
+    		c-0.138,0.032-0.284,0.052-0.418,0.09c-27.158,7.586-47.08,32.512-47.08,62.091v4.222h128.921v-4.223
+    		C321.029,37.504,292.169,8.644,256.569,8.644z" />
+              <path style="fill:#58595B;" d="M192.108,435.8v3.291c0,29.578,19.922,54.503,47.079,62.091c0.246,0.068,0.489,0.12,0.732,0.172
+    		c5.314,1.42,10.888,2.199,16.649,2.199l0,0c35.601,0,64.461-28.86,64.461-64.461v-3.291h-128.92V435.8z" />
+            </g>
+            <polygon style="fill:#E6E7E8;" points="321.029,397.22 192.108,397.22 192.108,370.918 194.318,366.835 194.413,341.768 
+    	192.108,337.861 192.108,313.508 194.318,307.87 194.698,284.891 192.108,280.452 192.108,256.098 194.983,251.563 195.173,226.496 
+    	192.108,223.042 192.108,198.688 195.173,194.403 194.603,170.332 192.108,165.632 192.108,141.278 194.746,137.36 192.108,115.07 
+    	321.029,115.07 321.029,116.925 318.61,121.574 318.325,146.451 321.029,149.991 321.029,174.335 318.231,179.115 318.04,204.277 
+    	321.029,207.4 321.029,231.744 317.946,238.365 317.851,260.963 321.029,264.811 321.029,289.153 318.516,294.387 318.516,317.555 
+    	321.029,322.221 321.029,346.494 318.516,350.883 318.04,375.76 321.029,379.561 " />
+            <polygon style="fill:#D1D3D4;" points="289.27,397.22 321.029,397.22 321.029,379.561 318.04,375.76 318.516,350.883 
+    	321.029,346.494 321.029,322.221 318.516,317.555 318.516,294.387 321.029,289.153 321.029,264.811 317.851,260.963 
+    	317.946,238.365 321.029,231.744 321.029,207.4 318.04,204.277 318.231,179.115 321.029,174.335 321.029,149.991 318.325,146.451 
+    	318.61,121.574 321.029,116.925 321.029,115.07 289.27,115.07 " />
+            <path style="fill:#414042;" d="M256.569,8.644L256.569,8.644c-6.023,0-11.847,0.844-17.376,2.389
+    	c27.157,7.587,47.084,32.494,47.084,62.072v4.223h34.752v-4.223C321.029,37.504,292.169,8.644,256.569,8.644z" />
+            <polygon style="fill:#ED4850;" points="192.108,113.029 192.108,141.278 267.409,112.836 " />
+            <path style="fill:#414042;" d="M286.277,435.8v3.291c0,29.577-19.928,54.485-47.084,62.072c5.531,1.545,11.353,2.389,17.376,2.389
+    	l0,0c35.601,0,64.461-28.86,64.461-64.461v-3.291h-34.752V435.8z" />
+            <path style="fill:#D1D3D4;" d="M335.158,116.925H177.979c-3.018,0-5.465-2.446-5.465-5.465V80.235c0-3.018,2.446-5.465,5.465-5.465
+    	h157.178c3.018,0,5.465,2.446,5.465,5.465v31.225C340.623,114.478,338.175,116.925,335.158,116.925z" />
+            <g>
+              <polygon style="fill:#5A8EE8;"
+                points="321.029,346.495 192.108,395.202 192.108,428.258 321.029,379.563 	" />
+              <polygon style="fill:#5A8EE8;"
+                points="321.029,116.925 192.108,165.632 192.108,198.688 321.029,149.991 	" />
+            </g>
+            <path style="fill:#D1D3D4;" d="M335.158,437.426H177.979c-3.018,0-5.465-2.446-5.465-5.465v-31.226c0-3.018,2.446-5.465,5.465-5.465
+    	h157.178c3.018,0,5.465,2.446,5.465,5.465v31.225C340.623,434.978,338.175,437.426,335.158,437.426z" />
+            <g>
+              <path style="fill:#BCBEC0;" d="M335.157,74.77h-35.473c3.018,0,5.465,2.446,5.465,5.465v31.225c0,3.018-2.446,5.465-5.465,5.465
+    		h35.473c3.018,0,5.465-2.446,5.465-5.465V80.235C340.623,77.216,338.175,74.77,335.157,74.77z" />
+              <path style="fill:#BCBEC0;" d="M335.157,395.271h-35.473c3.018,0,5.465,2.446,5.465,5.465v31.225c0,3.018-2.446,5.465-5.465,5.465
+    		h35.473c3.018,0,5.465-2.446,5.465-5.465v-31.225C340.623,397.717,338.175,395.271,335.157,395.271z" />
+            </g>
+            <polygon style="fill:#5A8EE8;" points="321.029,231.744 192.108,280.451 192.108,313.508 321.029,264.811 " />
+            <g>
+              <polygon style="fill:#ED4850;"
+                points="321.029,174.334 192.108,223.042 192.108,256.098 321.029,207.401 	" />
+              <polygon style="fill:#ED4850;"
+                points="321.029,289.154 192.108,337.861 192.108,370.917 321.029,322.221 	" />
+            </g>
+            <path d="M334.587,125.373c7.725,0,14.01-6.285,14.01-14.01V80.137c0-7.725-6.285-14.01-14.01-14.01h-5.91
+    	c-1.455-15.439-7.781-30.042-18.184-41.703c-3.141-3.522-8.545-3.831-12.065-0.688c-3.522,3.141-3.83,8.543-0.688,12.065
+    	c7.602,8.523,12.364,19.098,13.751,30.326H200.503c3.403-27.597,26.993-49.035,55.496-49.035c4.719,0,8.546-3.826,8.546-8.546
+    	S260.718,0,255.999,0c-37.935,0-69.193,29.086-72.672,66.126h-5.916c-7.725,0-14.01,6.285-14.01,14.01v31.225
+    	c0,7.725,6.285,14.01,14.01,14.01h5.582v261.254h-5.582c-7.725,0-14.01,6.285-14.01,14.01v31.225c0,7.725,6.285,14.01,14.01,14.01
+    	h5.916c3.48,37.04,34.738,66.126,72.672,66.126s69.193-29.086,72.672-66.126h5.916c7.725,0,14.01-6.285,14.01-14.01v-31.225
+    	c0-7.725-6.285-14.01-14.01-14.01h-5.582V125.373H334.587z M180.49,83.218h11.048h128.921h11.048v25.064h-11.048H191.538H180.49
+    	V83.218z M200.084,286.26l111.83-42.25v39.139l-111.83,42.25L200.084,286.26L200.084,286.26z M311.914,225.739l-111.83,42.25V228.85
+    	l111.83-42.25V225.739z M255.999,494.909c-28.503,0-52.092-21.438-55.494-49.035h110.988
+    	C308.091,473.47,284.5,494.909,255.999,494.909z M331.507,428.781h-11.048H191.538H180.49v-25.064h11.048h128.921h11.048
+    	L331.507,428.781L331.507,428.781z M200.084,386.627V343.67l111.83-42.25v39.138l-53.389,20.17c-4.415,1.668-6.642,6.6-4.974,11.015
+    	c1.292,3.421,4.543,5.527,7.996,5.527c1.003,0,2.024-0.178,3.018-0.554l47.348-17.888v27.797h-111.83V386.627z M311.914,168.329
+    	l-111.83,42.25V171.44l48.702-18.399c4.415-1.668,6.642-6.6,4.974-11.015c-1.667-4.414-6.597-6.643-11.015-4.974l-42.661,16.117
+    	v-27.797h111.83V168.329z" />
+          </svg>
+          <h2 class="section-title neon-effect">Cortes</h2>
+          <!-- <img  class="logos-galeria" src="../images/logo1.png"> -->
+          <svg class="logos-galeria" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.998 511.998" xml:space="preserve">
+            <g>
+              <path style="fill:#58595B;" d="M256.569,8.644L256.569,8.644c-5.875,0-11.556,0.808-16.964,2.281
+    		c-0.138,0.032-0.284,0.052-0.418,0.09c-27.158,7.586-47.08,32.512-47.08,62.091v4.222h128.921v-4.223
+    		C321.029,37.504,292.169,8.644,256.569,8.644z" />
+              <path style="fill:#58595B;" d="M192.108,435.8v3.291c0,29.578,19.922,54.503,47.079,62.091c0.246,0.068,0.489,0.12,0.732,0.172
+    		c5.314,1.42,10.888,2.199,16.649,2.199l0,0c35.601,0,64.461-28.86,64.461-64.461v-3.291h-128.92V435.8z" />
+            </g>
+            <polygon style="fill:#E6E7E8;" points="321.029,397.22 192.108,397.22 192.108,370.918 194.318,366.835 194.413,341.768 
+    	192.108,337.861 192.108,313.508 194.318,307.87 194.698,284.891 192.108,280.452 192.108,256.098 194.983,251.563 195.173,226.496 
+    	192.108,223.042 192.108,198.688 195.173,194.403 194.603,170.332 192.108,165.632 192.108,141.278 194.746,137.36 192.108,115.07 
+    	321.029,115.07 321.029,116.925 318.61,121.574 318.325,146.451 321.029,149.991 321.029,174.335 318.231,179.115 318.04,204.277 
+    	321.029,207.4 321.029,231.744 317.946,238.365 317.851,260.963 321.029,264.811 321.029,289.153 318.516,294.387 318.516,317.555 
+    	321.029,322.221 321.029,346.494 318.516,350.883 318.04,375.76 321.029,379.561 " />
+            <polygon style="fill:#D1D3D4;" points="289.27,397.22 321.029,397.22 321.029,379.561 318.04,375.76 318.516,350.883 
+    	321.029,346.494 321.029,322.221 318.516,317.555 318.516,294.387 321.029,289.153 321.029,264.811 317.851,260.963 
+    	317.946,238.365 321.029,231.744 321.029,207.4 318.04,204.277 318.231,179.115 321.029,174.335 321.029,149.991 318.325,146.451 
+    	318.61,121.574 321.029,116.925 321.029,115.07 289.27,115.07 " />
+            <path style="fill:#414042;" d="M256.569,8.644L256.569,8.644c-6.023,0-11.847,0.844-17.376,2.389
+    	c27.157,7.587,47.084,32.494,47.084,62.072v4.223h34.752v-4.223C321.029,37.504,292.169,8.644,256.569,8.644z" />
+            <polygon style="fill:#ED4850;" points="192.108,113.029 192.108,141.278 267.409,112.836 " />
+            <path style="fill:#414042;" d="M286.277,435.8v3.291c0,29.577-19.928,54.485-47.084,62.072c5.531,1.545,11.353,2.389,17.376,2.389
+    	l0,0c35.601,0,64.461-28.86,64.461-64.461v-3.291h-34.752V435.8z" />
+            <path style="fill:#D1D3D4;" d="M335.158,116.925H177.979c-3.018,0-5.465-2.446-5.465-5.465V80.235c0-3.018,2.446-5.465,5.465-5.465
+    	h157.178c3.018,0,5.465,2.446,5.465,5.465v31.225C340.623,114.478,338.175,116.925,335.158,116.925z" />
+            <g>
+              <polygon style="fill:#5A8EE8;"
+                points="321.029,346.495 192.108,395.202 192.108,428.258 321.029,379.563 	" />
+              <polygon style="fill:#5A8EE8;"
+                points="321.029,116.925 192.108,165.632 192.108,198.688 321.029,149.991 	" />
+            </g>
+            <path style="fill:#D1D3D4;" d="M335.158,437.426H177.979c-3.018,0-5.465-2.446-5.465-5.465v-31.226c0-3.018,2.446-5.465,5.465-5.465
+    	h157.178c3.018,0,5.465,2.446,5.465,5.465v31.225C340.623,434.978,338.175,437.426,335.158,437.426z" />
+            <g>
+              <path style="fill:#BCBEC0;" d="M335.157,74.77h-35.473c3.018,0,5.465,2.446,5.465,5.465v31.225c0,3.018-2.446,5.465-5.465,5.465
+    		h35.473c3.018,0,5.465-2.446,5.465-5.465V80.235C340.623,77.216,338.175,74.77,335.157,74.77z" />
+              <path style="fill:#BCBEC0;" d="M335.157,395.271h-35.473c3.018,0,5.465,2.446,5.465,5.465v31.225c0,3.018-2.446,5.465-5.465,5.465
+    		h35.473c3.018,0,5.465-2.446,5.465-5.465v-31.225C340.623,397.717,338.175,395.271,335.157,395.271z" />
+            </g>
+            <polygon style="fill:#5A8EE8;" points="321.029,231.744 192.108,280.451 192.108,313.508 321.029,264.811 " />
+            <g>
+              <polygon style="fill:#ED4850;"
+                points="321.029,174.334 192.108,223.042 192.108,256.098 321.029,207.401 	" />
+              <polygon style="fill:#ED4850;"
+                points="321.029,289.154 192.108,337.861 192.108,370.917 321.029,322.221 	" />
+            </g>
+            <path d="M334.587,125.373c7.725,0,14.01-6.285,14.01-14.01V80.137c0-7.725-6.285-14.01-14.01-14.01h-5.91
+    	c-1.455-15.439-7.781-30.042-18.184-41.703c-3.141-3.522-8.545-3.831-12.065-0.688c-3.522,3.141-3.83,8.543-0.688,12.065
+    	c7.602,8.523,12.364,19.098,13.751,30.326H200.503c3.403-27.597,26.993-49.035,55.496-49.035c4.719,0,8.546-3.826,8.546-8.546
+    	S260.718,0,255.999,0c-37.935,0-69.193,29.086-72.672,66.126h-5.916c-7.725,0-14.01,6.285-14.01,14.01v31.225
+    	c0,7.725,6.285,14.01,14.01,14.01h5.582v261.254h-5.582c-7.725,0-14.01,6.285-14.01,14.01v31.225c0,7.725,6.285,14.01,14.01,14.01
+    	h5.916c3.48,37.04,34.738,66.126,72.672,66.126s69.193-29.086,72.672-66.126h5.916c7.725,0,14.01-6.285,14.01-14.01v-31.225
+    	c0-7.725-6.285-14.01-14.01-14.01h-5.582V125.373H334.587z M180.49,83.218h11.048h128.921h11.048v25.064h-11.048H191.538H180.49
+    	V83.218z M200.084,286.26l111.83-42.25v39.139l-111.83,42.25L200.084,286.26L200.084,286.26z M311.914,225.739l-111.83,42.25V228.85
+    	l111.83-42.25V225.739z M255.999,494.909c-28.503,0-52.092-21.438-55.494-49.035h110.988
+    	C308.091,473.47,284.5,494.909,255.999,494.909z M331.507,428.781h-11.048H191.538H180.49v-25.064h11.048h128.921h11.048
+    	L331.507,428.781L331.507,428.781z M200.084,386.627V343.67l111.83-42.25v39.138l-53.389,20.17c-4.415,1.668-6.642,6.6-4.974,11.015
+    	c1.292,3.421,4.543,5.527,7.996,5.527c1.003,0,2.024-0.178,3.018-0.554l47.348-17.888v27.797h-111.83V386.627z M311.914,168.329
+    	l-111.83,42.25V171.44l48.702-18.399c4.415-1.668,6.642-6.6,4.974-11.015c-1.667-4.414-6.597-6.643-11.015-4.974l-42.661,16.117
+    	v-27.797h111.83V168.329z" />
+          </svg>
         </div>
-        
-        <div style="background-color: #302f2f; padding-top: 1px; padding-bottom: 2px;" >
-        <div class="img-container">
-        <div class="img">
 
-          <img loading="lazy" src="../images-galeria/foto_corte_7_horizontal.jpg" alt="" class="img-width iw11">
-          <img loading="lazy" src="../images-galeria/foto_corte_8_horizontal.jpg" alt="" class="img-width iw14">
-          
-          <img loading="lazy" src="../images-galeria/foto_corte_1.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../images-galeria/foto_corte_2.jpg" alt="" class="img-vs1 i9">
-          <img loading="lazy" src="../images-galeria/foto_corte_3.jpg" alt="" class="img-vs1 i10">
-          <img loading="lazy" src="../images-galeria/foto_corte_4.jpg" alt="" class="img-vs1 i12">
-        
+        <div style="background-color: #302f2f; padding-top: 1px; padding-bottom: 2px;">
+          <div class="img-container">
+            <div class="img">
 
-          <img loading="lazy" src="../images-galeria/foto_corte_1_horizontal.jpg" alt="" class="img-width iw11">
-          <img loading="lazy" src="../images-galeria/foto_corte_2_horizontal.jpg" alt="" class="img-width iw14">
-         
+              <img loading="lazy" src="../images-galeria/foto_corte_7_horizontal.jpg" alt="" class="img-width iw11">
+              <img loading="lazy" src="../images-galeria/foto_corte_8_horizontal.jpg" alt="" class="img-width iw14">
 
-          <img loading="lazy" src="../images-galeria/foto_corte_5.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../images-galeria/foto_corte_6.jpg" alt="" class="img-vs1 i9">
-          <img loading="lazy" src="../images-galeria/foto_corte_7.png" alt="" class="img-vs1 i10">
-          <img loading="lazy" src="../images-galeria/foto_corte_8.jpg" alt="" class="img-vs1 i12">
-       
-          <img loading="lazy" src="../images-galeria/foto_corte_3_horizontal.jpg" alt="" class="img-width iw11">
-          <img loading="lazy" src="../images-galeria/foto_corte_4_horizontal.jpg" alt="" class="img-width iw14">
-     
-          <img loading="lazy" src="../images-galeria/foto_corte_9.png" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../images-galeria/foto_corte_10.png" alt="" class="img-vs1 i9">
-          <img loading="lazy" src="../images-galeria/foto_corte_11.jpg" alt="" class="img-vs1 i10">
-          <img loading="lazy" src="../images-galeria/foto_corte_12.jpg" alt="" class="img-vs1 i12">
+              <img loading="lazy" src="../images-galeria/foto_corte_1.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../images-galeria/foto_corte_2.jpg" alt="" class="img-vs1 i9">
+              <img loading="lazy" src="../images-galeria/foto_corte_3.jpg" alt="" class="img-vs1 i10">
+              <img loading="lazy" src="../images-galeria/foto_corte_4.jpg" alt="" class="img-vs1 i12">
 
-          <img loading="lazy" src="../images-galeria/foto_corte_5_horizontal.jpg" alt="" class="img-width iw11">
-          <img loading="lazy" src="../images-galeria/foto_corte_6_horizontal.png" alt="" class="img-width iw14">
 
-          <img loading="lazy" src="../images-galeria/foto_corte_9_horizontal.jpg" alt="" class="img-width iw11">
-          <img loading="lazy" src="../images-galeria/foto_corte_10_horizontal.jpg" alt="" class="img-width iw14">
+              <img loading="lazy" src="../images-galeria/foto_corte_1_horizontal.jpg" alt="" class="img-width iw11">
+              <img loading="lazy" src="../images-galeria/foto_corte_2_horizontal.jpg" alt="" class="img-width iw14">
+
+
+              <img loading="lazy" src="../images-galeria/foto_corte_5.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../images-galeria/foto_corte_6.jpg" alt="" class="img-vs1 i9">
+              <img loading="lazy" src="../images-galeria/foto_corte_7.png" alt="" class="img-vs1 i10">
+              <img loading="lazy" src="../images-galeria/foto_corte_8.jpg" alt="" class="img-vs1 i12">
+
+              <img loading="lazy" src="../images-galeria/foto_corte_3_horizontal.jpg" alt="" class="img-width iw11">
+              <img loading="lazy" src="../images-galeria/foto_corte_4_horizontal.jpg" alt="" class="img-width iw14">
+
+              <img loading="lazy" src="../images-galeria/foto_corte_9.png" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../images-galeria/foto_corte_10.png" alt="" class="img-vs1 i9">
+              <img loading="lazy" src="../images-galeria/foto_corte_11.jpg" alt="" class="img-vs1 i10">
+              <img loading="lazy" src="../images-galeria/foto_corte_12.jpg" alt="" class="img-vs1 i12">
+
+              <img loading="lazy" src="../images-galeria/foto_corte_5_horizontal.jpg" alt="" class="img-width iw11">
+              <img loading="lazy" src="../images-galeria/foto_corte_6_horizontal.png" alt="" class="img-width iw14">
+
+              <img loading="lazy" src="../images-galeria/foto_corte_9_horizontal.jpg" alt="" class="img-width iw11">
+              <img loading="lazy" src="../images-galeria/foto_corte_10_horizontal.jpg" alt="" class="img-width iw14">
+            </div>
+
+
+          </div>
+
+
+
+
+
+          <div class="galeria-carrusel">
+
+            <div class="gallery2 js-flickity">
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_1.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_2.jpg" class="grid-item-gallery">
+              </div>
+              <div class=""> <!-- gallery-cell removed-->
+                <img loading="lazy" src="../images-galeria/foto_corte_3.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_4.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_5.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_6.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_7.png" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_8.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_9.png" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_10.png" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_11.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_12.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_13.jpg" class="grid-item-gallery">
+              </div>
+
+            </div>
+            <div class="gallery2 js-flickity" style="margin-top: 70px;">
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_1_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_2_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class=""> <!-- gallery-cell removed-->
+                <img loading="lazy" src="../images-galeria/foto_corte_3_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_4_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_5_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_6_horizontal.png" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_7_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_8_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_9_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_10_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-galeria/foto_corte_11_horizontal.jpg" class="grid-item-gallery2">
+              </div>
+            </div>
+          </div>
         </div>
 
-        
-        </div>  
-      
-
-
-
-       
-        <div class="galeria-carrusel">
-
-        <div class="gallery2 js-flickity">
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_1.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_2.jpg" class="grid-item-gallery">
-          </div>
-          <div class=""> <!-- gallery-cell removed-->
-            <img loading="lazy" src="../images-galeria/foto_corte_3.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_4.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_5.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_6.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_7.png" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_8.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_9.png" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_10.png" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_11.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_12.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_13.jpg" class="grid-item-gallery">
-          </div>
-      
-        </div>
-        <div class="gallery2 js-flickity" style="margin-top: 70px;">
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_1_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_2_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class=""> <!-- gallery-cell removed-->
-            <img loading="lazy" src="../images-galeria/foto_corte_3_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_4_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_5_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_6_horizontal.png" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_7_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_8_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_9_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_10_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-galeria/foto_corte_11_horizontal.jpg" class="grid-item-gallery2">
-          </div>
-        </div>
       </div>
-        </div>
-
-    </div>
     </section>
 
 
 
-    <section class="section haircut" id="tattoo" style="background-color:  #E3E3E3;" >
-      <div class="container2">
+    <section class="section haircut" id="tattoo" style="background-color: #302f2f;"> <!-- #E3E3E3 -->
+      <div class="container">
         <!-- <img class="border-shadow-image" src="../images/bannerTatuaje.jpg" width="100%" style="margin-top: -50px;"> -->
         <div class="sectioner-banner">
-          <img class="logos-galeria" src="../images/logo2.png" width="64px">
-          <h2  class="section-title text-center">Tatuajes</h2>
-          <img class="logos-galeria" src="../images/logo2.png" width="64px">
+          <!-- <img class="logos-galeria" src="../images/logo2.png" width="64px"> -->
+          <svg version="1.1" class="logos-galeria" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 470 470" xml:space="preserve">
+            <g>
+              <path style="fill:#FDF3C2;"
+                d="M85.12,135h-9.751c-4.136,0-7.5,3.364-7.5,7.5s3.364,7.5,7.5,7.5h9.751V135z" />
+              <path style="fill:#FDF3C2;"
+                d="M166.12,384.022v29.5c0,1.355,1.145,2.5,2.5,2.5h10c1.355,0,2.5-1.145,2.5-2.5v-29.5H166.12z" />
+              <rect x="166.12" y="165" style="fill:#FDF3C2;" width="15" height="15" />
+              <path style="fill:#FFD691;"
+                d="M194.62,231h-42c-4.142,0-7.5-3.358-7.5-7.5h-15v117.02h15c0.001-4.141,3.358-7.498,7.5-7.498h42
+        		c4.141,0,7.499,3.357,7.5,7.498h15V223.5h-15C202.12,227.642,198.762,231,194.62,231z M194.62,318.767h-42
+        		c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h42c4.142,0,7.5,3.358,7.5,7.5S198.762,318.767,194.62,318.767z M194.62,289.511h-42
+        		c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h42c4.142,0,7.5,3.358,7.5,7.5S198.762,289.511,194.62,289.511z M194.62,260.255h-42
+        		c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h42c4.142,0,7.5,3.358,7.5,7.5S198.762,260.255,194.62,260.255z" />
+              <path style="fill:#FEC76B;" d="M202.12,340.522c0,4.142-3.358,7.5-7.5,7.5h-42c-4.142,0-7.5-3.358-7.5-7.5
+        		c0-0.002-15-0.002-15-0.002c0,15.717,12.785,28.502,28.5,28.502h30c15.715,0,28.5-12.785,28.5-28.5
+        		C217.12,340.52,202.12,340.52,202.12,340.522z" />
+              <path style="fill:#FEC76B;" d="M188.62,195h-30c-15.715,0-28.5,12.785-28.5,28.5h15c0-4.142,3.358-7.5,7.5-7.5h42
+        		c4.142,0,7.5,3.358,7.5,7.5h15C217.12,207.785,204.334,195,188.62,195z" />
+              <path style="fill:#F53635;" d="M299.125,45v75h43.006V67.5c0-4.142,3.357-7.499,7.499-7.5V45H299.125z" />
+              <path style="fill:#F53635;"
+                d="M211.12,45v75h43.006V67.5c0-4.142,3.358-7.5,7.5-7.5c0.005,0,0.005-15,0.005-15H211.12z" />
+              <rect x="130.12" y="135" style="fill:#C3F2AA;" width="272.012" height="15" />
+              <rect x="181.12" y="15" style="fill:#C3F2AA;" width="221.012" height="15" />
+              <path style="fill:#570100;" d="M409.631,45c4.142,0,7.5-3.358,7.5-7.5v-30c0-4.142-3.358-7.5-7.5-7.5H173.62
+        		c-4.142,0-7.5,3.358-7.5,7.5V120h-43.5c-4.142,0-7.5,3.358-7.5,7.5v7.5h-15v-7.5c0-4.142-3.358-7.5-7.5-7.5H75.369
+        		c-12.407,0-22.5,10.093-22.5,22.5s10.093,22.5,22.5,22.5H92.62c4.142,0,7.5-3.358,7.5-7.5V150h15v7.5c0,4.142,3.358,7.5,7.5,7.5
+        		h28.5v15.661c-20.422,3.566-36,21.412-36,42.839v117.022c0,21.427,15.578,39.273,36,42.839v30.161c0,8.798,6.534,16.081,15,17.3
+        		V462.5c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-31.678c8.466-1.22,15-8.502,15-17.3v-30.161
+        		c20.422-3.566,36-21.412,36-42.839V223.5c0-21.427-15.578-39.273-36-42.839V165h213.512c4.142,0,7.5-3.358,7.5-7.5v-30
+        		c0-4.142-3.358-7.5-7.5-7.5h-22.5V45H409.631z M67.869,142.5c0-4.136,3.364-7.5,7.5-7.5h9.751v15h-9.751
+        		C71.233,150,67.869,146.636,67.869,142.5z M402.131,150H130.12v-15h272.012V150z M217.12,340.522c0,15.715-12.785,28.5-28.5,28.5
+        		h-30c-15.715,0-28.5-12.785-28.5-28.5V223.5c0-15.715,12.785-28.5,28.5-28.5h30c15.715,0,28.5,12.785,28.5,28.5V340.522z
+        		 M178.62,416.022h-10c-1.355,0-2.5-1.145-2.5-2.5v-29.5h15v29.5C181.12,414.877,179.975,416.022,178.62,416.022z M181.12,180h-15
+        		v-15h15V180z M181.12,15h221.012v15H181.12V15z M269.125,120V67.5c0-4.141-3.356-7.497-7.495-7.5c-4.147,0-7.505,3.358-7.505,7.5
+        		V120H211.12V45h73.006v75H269.125z M181.12,45h15v75h-15V45z M372.131,120h-15V67.5c0-4.142-3.358-7.5-7.5-7.5
+        		c-4.143,0.001-7.5,3.358-7.5,7.5V120h-43.006V45h73.006V120z" />
+              <path style="fill:#570100;" d="M152.62,348.022h42c4.142,0,7.5-3.358,7.5-7.5c-0.001-4.143-3.359-7.5-7.5-7.5h-42
+        		c-4.141,0-7.499,3.357-7.5,7.498C145.12,344.664,148.478,348.022,152.62,348.022z" />
+              <path style="fill:#570100;" d="M194.62,303.767h-42c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h42c4.142,0,7.5-3.358,7.5-7.5
+        		S198.762,303.767,194.62,303.767z" />
+              <path style="fill:#570100;" d="M194.62,274.511h-42c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h42c4.142,0,7.5-3.358,7.5-7.5
+        		S198.762,274.511,194.62,274.511z" />
+              <path style="fill:#570100;" d="M194.62,245.255h-42c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h42c4.142,0,7.5-3.358,7.5-7.5
+        		S198.762,245.255,194.62,245.255z" />
+              <path style="fill:#570100;" d="M152.62,231h42c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-42c-4.142,0-7.5,3.358-7.5,7.5
+        		S148.478,231,152.62,231z" />
+            </g>
+          </svg>
+          <h2 class="section-title text-center neon-effect">Tatuajes</h2>
+          <!-- <img class="logos-galeria" src="../images/logo2.png" width="64px"> -->
+          <svg version="1.1" class="logos-galeria" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 470 470" xml:space="preserve">
+            <g>
+              <path style="fill:#FDF3C2;"
+                d="M85.12,135h-9.751c-4.136,0-7.5,3.364-7.5,7.5s3.364,7.5,7.5,7.5h9.751V135z" />
+              <path style="fill:#FDF3C2;"
+                d="M166.12,384.022v29.5c0,1.355,1.145,2.5,2.5,2.5h10c1.355,0,2.5-1.145,2.5-2.5v-29.5H166.12z" />
+              <rect x="166.12" y="165" style="fill:#FDF3C2;" width="15" height="15" />
+              <path style="fill:#FFD691;"
+                d="M194.62,231h-42c-4.142,0-7.5-3.358-7.5-7.5h-15v117.02h15c0.001-4.141,3.358-7.498,7.5-7.498h42
+                  		c4.141,0,7.499,3.357,7.5,7.498h15V223.5h-15C202.12,227.642,198.762,231,194.62,231z M194.62,318.767h-42
+                  		c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h42c4.142,0,7.5,3.358,7.5,7.5S198.762,318.767,194.62,318.767z M194.62,289.511h-42
+                  		c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h42c4.142,0,7.5,3.358,7.5,7.5S198.762,289.511,194.62,289.511z M194.62,260.255h-42
+                  		c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h42c4.142,0,7.5,3.358,7.5,7.5S198.762,260.255,194.62,260.255z" />
+              <path style="fill:#FEC76B;" d="M202.12,340.522c0,4.142-3.358,7.5-7.5,7.5h-42c-4.142,0-7.5-3.358-7.5-7.5
+                  		c0-0.002-15-0.002-15-0.002c0,15.717,12.785,28.502,28.5,28.502h30c15.715,0,28.5-12.785,28.5-28.5
+                  		C217.12,340.52,202.12,340.52,202.12,340.522z" />
+              <path style="fill:#FEC76B;" d="M188.62,195h-30c-15.715,0-28.5,12.785-28.5,28.5h15c0-4.142,3.358-7.5,7.5-7.5h42
+                  		c4.142,0,7.5,3.358,7.5,7.5h15C217.12,207.785,204.334,195,188.62,195z" />
+              <path style="fill:#F53635;" d="M299.125,45v75h43.006V67.5c0-4.142,3.357-7.499,7.499-7.5V45H299.125z" />
+              <path style="fill:#F53635;"
+                d="M211.12,45v75h43.006V67.5c0-4.142,3.358-7.5,7.5-7.5c0.005,0,0.005-15,0.005-15H211.12z" />
+              <rect x="130.12" y="135" style="fill:#C3F2AA;" width="272.012" height="15" />
+              <rect x="181.12" y="15" style="fill:#C3F2AA;" width="221.012" height="15" />
+              <path style="fill:#570100;" d="M409.631,45c4.142,0,7.5-3.358,7.5-7.5v-30c0-4.142-3.358-7.5-7.5-7.5H173.62
+                  		c-4.142,0-7.5,3.358-7.5,7.5V120h-43.5c-4.142,0-7.5,3.358-7.5,7.5v7.5h-15v-7.5c0-4.142-3.358-7.5-7.5-7.5H75.369
+                  		c-12.407,0-22.5,10.093-22.5,22.5s10.093,22.5,22.5,22.5H92.62c4.142,0,7.5-3.358,7.5-7.5V150h15v7.5c0,4.142,3.358,7.5,7.5,7.5
+                  		h28.5v15.661c-20.422,3.566-36,21.412-36,42.839v117.022c0,21.427,15.578,39.273,36,42.839v30.161c0,8.798,6.534,16.081,15,17.3
+                  		V462.5c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-31.678c8.466-1.22,15-8.502,15-17.3v-30.161
+                  		c20.422-3.566,36-21.412,36-42.839V223.5c0-21.427-15.578-39.273-36-42.839V165h213.512c4.142,0,7.5-3.358,7.5-7.5v-30
+                  		c0-4.142-3.358-7.5-7.5-7.5h-22.5V45H409.631z M67.869,142.5c0-4.136,3.364-7.5,7.5-7.5h9.751v15h-9.751
+                  		C71.233,150,67.869,146.636,67.869,142.5z M402.131,150H130.12v-15h272.012V150z M217.12,340.522c0,15.715-12.785,28.5-28.5,28.5
+                  		h-30c-15.715,0-28.5-12.785-28.5-28.5V223.5c0-15.715,12.785-28.5,28.5-28.5h30c15.715,0,28.5,12.785,28.5,28.5V340.522z
+                  		 M178.62,416.022h-10c-1.355,0-2.5-1.145-2.5-2.5v-29.5h15v29.5C181.12,414.877,179.975,416.022,178.62,416.022z M181.12,180h-15
+                  		v-15h15V180z M181.12,15h221.012v15H181.12V15z M269.125,120V67.5c0-4.141-3.356-7.497-7.495-7.5c-4.147,0-7.505,3.358-7.505,7.5
+                  		V120H211.12V45h73.006v75H269.125z M181.12,45h15v75h-15V45z M372.131,120h-15V67.5c0-4.142-3.358-7.5-7.5-7.5
+                  		c-4.143,0.001-7.5,3.358-7.5,7.5V120h-43.006V45h73.006V120z" />
+              <path style="fill:#570100;" d="M152.62,348.022h42c4.142,0,7.5-3.358,7.5-7.5c-0.001-4.143-3.359-7.5-7.5-7.5h-42
+                  		c-4.141,0-7.499,3.357-7.5,7.498C145.12,344.664,148.478,348.022,152.62,348.022z" />
+              <path style="fill:#570100;" d="M194.62,303.767h-42c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h42c4.142,0,7.5-3.358,7.5-7.5
+                  		S198.762,303.767,194.62,303.767z" />
+              <path style="fill:#570100;" d="M194.62,274.511h-42c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h42c4.142,0,7.5-3.358,7.5-7.5
+                  		S198.762,274.511,194.62,274.511z" />
+              <path style="fill:#570100;" d="M194.62,245.255h-42c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h42c4.142,0,7.5-3.358,7.5-7.5
+                  		S198.762,245.255,194.62,245.255z" />
+              <path style="fill:#570100;" d="M152.62,231h42c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-42c-4.142,0-7.5,3.358-7.5,7.5
+                  		S148.478,231,152.62,231z" />
+            </g>
+          </svg>
         </div>
 
 
-        <div style="background-color: #302f2f; padding-top: 2px; padding-bottom: 2px;" >
-        <div class="img-container">
-        <div class="img">
+        <div style="background-color: #302f2f; padding-top: 2px; padding-bottom: 2px;">
+          <div class="img-container">
+            <div class="img">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje_1.jpg" alt="" class="img-vs2 i8">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje2.jpg" alt="" class="img-vs2 i9">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje3.jpg" alt="" class="img-vs2 i10">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje4.jpg" alt="" class="img-vs2 i12">
+              <!-- <img loading="lazy" src="../images-tatuajes/foto_tatuaje5.jpg" alt="" class="img-vs2 i13"> -->
+              <!-- <img loading="lazy" src="../images-tatuajes/foto_tatuaje6.jpg" alt="" class="img-vs2 i8"> -->
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje7.jpg" alt="" class="img-vs2 i9">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje8.jpg" alt="" class="img-vs2 i10">
+              <!-- <img loading="lazy" src="../images-tatuajes/foto_tatuaje9.jpg" alt="" class="img-vs2 i12"> -->
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje10.jpg" alt="" class="img-vs2 i13">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje11.jpg" alt="" class="img-vs2 i8">
+              <!-- <img loading="lazy" src="../images-tatuajes/foto_tatuaje12.jpg" alt="" class="img-vs2 i9"> -->
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje13.jpg" alt="" class="img-vs2 i10">
+              <img loading="lazy" src="../images-tatuajes/foto_tatuaje14.jpg" alt="" class="img-vs2 i12">
+              <!-- <img loading="lazy" src="../images-tatuajes/foto_tatuaje14.jpg" alt="" class="img-vs2 i13"> -->
+            </div>
+          </div>
 
-          
-
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje_1.jpg" alt="" class="img-vs2 i8">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje2.jpg" alt="" class="img-vs2 i9">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje3.jpg" alt="" class="img-vs2 i10">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje4.jpg" alt="" class="img-vs2 i12">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje5.jpg" alt="" class="img-vs2 i13">
-
-
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje6.jpg" alt="" class="img-vs2 i8">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje7.jpg" alt="" class="img-vs2 i9">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje8.jpg" alt="" class="img-vs2 i10">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje9.jpg" alt="" class="img-vs2 i12">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje10.jpg" alt="" class="img-vs2 i13">
-
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje11.jpg" alt="" class="img-vs2 i8">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje12.jpg" alt="" class="img-vs2 i9">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje13.jpg" alt="" class="img-vs2 i10">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje14.jpg" alt="" class="img-vs2 i12">
-          <img loading="lazy" src="../images-tatuajes/foto_tatuaje14.jpg" alt="" class="img-vs2 i13">
+          <div class="galeria-carrusel">
+            <div class="gallery2 js-flickity">
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje_1.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje2.jpg" class="grid-item-gallery">
+              </div>
+              <div class=""> <!-- gallery-cell removed-->
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje3.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje4.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje5.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje6.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje7.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje8.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje9.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje10.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje11.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje12.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje13.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../images-tatuajes/foto_tatuaje14.jpg" class="grid-item-gallery">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-
-      <div class="galeria-carrusel">
-
-        <div class="gallery2 js-flickity">
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje_1.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje2.jpg" class="grid-item-gallery">
-          </div>
-          <div class=""> <!-- gallery-cell removed-->
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje3.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje4.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje5.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje6.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje7.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje8.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje9.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje10.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje11.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje12.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje13.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../images-tatuajes/foto_tatuaje14.jpg" class="grid-item-gallery">
-          </div>
-        </div>
-     
-      </div>
-
-</div>
-
-      </div>
-      
-    
     </section>
 
-    <section class="section haircut" id="piercing" style="background-color: #E3E3E3;" >
-      <div class="container2">
+    <section class="section haircut" id="piercing" style="background-color: #E3E3E3;">
+      <div class="container">
         <!-- <img class="border-shadow-image" src="../images/bannerPiercing.jpg" width="100%"> -->
         <div class="sectioner-banner">
           <img class="logos-galeria" src="../images/logo3.png">
-          <h2  class="section-title text-center">Piercings</h2>
+          <h2 class="section-title text-center neon-effect">Piercings</h2>
           <img class="logos-galeria" src="../images/logo3.png">
         </div>
 
+        <div style="background-color: #302f2f; padding-top: 2px; padding-bottom: 2px;">
+          <div class="img-container">
+            <div class="img">
+              <img loading="lazy" src="../img-piercings/foto-piercing1.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing2.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing3.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing4.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing5.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing6.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing7.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing8.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing9.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing10.jpg" alt="" class="img-vs1 i8">
+              <img loading="lazy" src="../img-piercings/foto-piercing11.jpg" alt="" class="img-vs1 i8">
+              <!-- <img loading="lazy" src="../img-piercings/foto-piercing12.jpg" alt="" class="img-vs1 i8"> -->
+              <img loading="lazy" src="../img-piercings/foto-piercing13.jpg" alt="" class="img-vs1 i8">
+              <!-- <img loading="lazy" src="../img-piercings/foto-piercing14.jpg" alt="" class="img-vs1 i8"> -->
+            </div>
+          </div>
 
-        <div style="background-color: #302f2f; padding-top: 2px; padding-bottom: 2px;" >
-        <div class="img-container">
-        <div class="img">
-          <img loading="lazy" src="../img-piercings/foto-piercing1.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing2.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing3.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing4.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing5.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing6.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing7.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing8.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing9.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing10.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing11.jpg" alt="" class="img-vs1 i8">
-   
-          <img loading="lazy" src="../img-piercings/foto-piercing12.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing13.jpg" alt="" class="img-vs1 i8">
-          <img loading="lazy" src="../img-piercings/foto-piercing14.jpg" alt="" class="img-vs1 i8">
+          <!-- the code below has display: none property, evaluar eliminarlo y sus clases css respectivos -->
+          <div class="galeria-carrusel">
+            <div class="gallery2 js-flickity">
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing1.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing2.jpg" class="grid-item-gallery">
+              </div>
+              <div class=""> <!-- gallery-cell removed-->
+                <img loading="lazy" src="../img-piercings/foto-piercing3.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing4.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing5.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing6.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing7.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing8.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing9.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing10.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing11.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing12.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing13.jpg" class="grid-item-gallery">
+              </div>
+              <div class="">
+                <img loading="lazy" src="../img-piercings/foto-piercing14.jpg" class="grid-item-gallery">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-
-      <div class="galeria-carrusel">
-
-        <div class="gallery2 js-flickity">
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing1.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing2.jpg" class="grid-item-gallery">
-          </div>
-          <div class=""> <!-- gallery-cell removed-->
-            <img loading="lazy" src="../img-piercings/foto-piercing3.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing4.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing5.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing6.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing7.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing8.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing9.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing10.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing11.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing12.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing13.jpg" class="grid-item-gallery">
-          </div>
-          <div class="">
-            <img loading="lazy" src="../img-piercings/foto-piercing14.jpg" class="grid-item-gallery">
-          </div>
-        </div>
-     
-      </div>
-
-</div>
-
       </div>
       <!-- <h2 class="h2 section-title text-center">Galeria de Imagenes</h2> -->
     </section>
-
-
-    <!-- <section class="hero-section">
-      <div class="card-container">
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje_1.jpg);"></div>
-          <div class="content">
-            <div class="card-category">xxxxxxxx</div>
-            <h3 class="card-heading">Titulo</h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje2.jpg);"></div>
-          <div class="content">
-            <div class="card-category">xxxxx</div>
-            <h3 class="card-heading">Titulo</h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje3.jpg);"></div>
-          <div class="content">
-            <div class="card-category">xxxxx</div>
-            <h3 class="card-heading">Titulo</h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images-tatuajes/foto_tatuaje4.jpg);"></div>
-          <div class="content">
-            <div class="card-category">xxxxx</div>
-            <h3 class="card-heading">Titulo</h3>
-          </div>
-        </div>
-      </div>
-    </section>   -->
-
-
-
-
-
-
   </main>
 
   <!-- 
@@ -585,29 +740,26 @@
 
   <footer class="footer has-bg-image" style="background-image: url('../images/footer-bg.png')">
     <div class="container">
-
       <div class="footer-top">
-
         <div class="footer-brand">
-
           <a href="#" class="logo">
             North Side Studio
             <span class="span">Barbería, Tattoo y Perforaciones</span>
           </a>
-          
+
           <!-- Jerry old social -->
           <!-- <div class="social-footer">
             <div class="social-cover"><a href="#"><ion-icon  name="logo-tiktok"></ion-icon></a></li></div>
             <div class="social-cover"><a href="https://web.facebook.com/profile.php?id=100069787795818" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li></div>
             <div class="social-cover"><a href="https://www.instagram.com/northside.barbershop/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li></div>   
             <div class="social-cover"><a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li></div>    -->
-              <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
-               
-              <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
-              
-              <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
-              <!-- <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li> -->
-              <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
+          <!-- <li><a href="#"><i class="fab fa-facebook"></i></a></li>  -->
+
+          <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+
+          <!-- <li><a href="#"><i class="fab fa-youtube"></i></a></li> -->
+          <!-- <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li> -->
+          <!-- <li><a href="#"><i class="fab fa-whatsapp"></i></a></li> -->
           <!-- </div> -->
           <!-- end Jerry -->
           <ul class="wrapper-social">
@@ -625,31 +777,15 @@
               <span class="tooltip">Facebook</span>
               <span><i class="fab fa-facebook-f"></i></span>
             </li>
-            
+
             <li class="icon whatsapp">
               <span class="tooltip">Whatsapp</span>
               <span><i class="fab fa-whatsapp"></i></span>
             </li>
-            
           </ul>
-
-
-          <!-- <form action="" class="input-wrapper">
-
-            <input type="email" name="email_address" placeholder="Ingresa tu Email" required class="email-field">
-
-            <button type="submit" class="btn has-before">
-              <span class="span">Subscribete Ahora</span>
-
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
-
-          </form> -->
-
         </div>
 
         <div class="footer-link-box">
-
           <ul class="footer-list">
 
             <li>
@@ -671,15 +807,9 @@
             <li>
               <a href="#team" class="footer-link has-before">Conoce a Nuestro Equipo</a>
             </li>
-
-            <!-- <li>
-              <a href="#" class="footer-link has-before">Contáctanos</a>
-            </li> -->
-
           </ul>
 
           <ul class="footer-list">
-
             <li>
               <p class="footer-list-title">Servicios</p>
             </li>
@@ -695,19 +825,9 @@
             <li>
               <a href="assets/views/gallery.html#piercing" class="footer-link has-before">Perforaciones</a>
             </li>
-
-            <!-- <li>
-              <a href="#" class="footer-link has-before">Razurado</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Tintes</a>
-            </li> -->
-
           </ul>
-          <!-- unordened list canceled -->
-          <ul class="footer-list"> <!-- social-footer removido-->
-            
+
+          <ul class="footer-list">
             <li>
               <p class="footer-list-title">Redes Sociales</p>
             </li>
@@ -719,13 +839,14 @@
             </li>
 
             <li>
-              <a href="https://www.instagram.com/northside.barbershop/" class="footer-link has-before" target="_blank" >
+              <a href="https://www.instagram.com/northside.barbershop/" class="footer-link has-before" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>Instagram
               </a>
             </li>
 
-            <li >
-              <a href="https://web.facebook.com/profile.php?id=100069787795818" class="footer-link has-before" target="_blank">
+            <li>
+              <a href="https://web.facebook.com/profile.php?id=100069787795818" class="footer-link has-before"
+                target="_blank">
                 <!-- <ion-icon name="logo-facebook"></ion-icon>Facebook -->
                 <i class="fab fa-facebook-f"></i>Facebook
                 <!-- <span class="fab fa-facebook-f"> Facebook</span> -->
@@ -733,23 +854,21 @@
             </li>
 
             <li>
-              <a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0" class="footer-link has-before" target="_blank">
+              <a href="https://api.whatsapp.com/send/?phone=%2B51974190538&text&type=phone_number&app_absent=0"
+                class="footer-link has-before" target="_blank">
                 <!-- <ion-icon name="chatbubble-ellipses-outline"></ion-icon> -->
                 <ion-icon name="logo-whatsapp"></ion-icon>Whatsapp
               </a>
             </li>
-
           </ul>
 
           <ul class="footer-list">
-
             <li>
               <p class="footer-list-title">Contáctanos</p>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-
               <address class="contact-link">
                 Cooperativa Virgen del rosario MZ. I lote 1
               </address>
@@ -757,34 +876,32 @@
 
             <li class="footer-list-item">
               <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-
               <a href="tel:+0123456789" class="contact-link">974 190 538</a>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
               <span class="contact-link">Lun - Sáb, 09 am - 10 pm</span>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-
               <a href="mailto:support@gmail.com" class="contact-link">NorthSideStudio@gmail.com</a>
             </li>
-
           </ul>
-
         </div>
-
       </div>
 
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; 2023 <a href="#" class="copyright-link">The Frog Team</a>. All Rights Reserved.
+          <!-- &copy; 2023 <a href="#" class="copyright-link">The Frog Team</a>. All Rights Reserved. -->
+          &copy; 2023 Implementado por <a href="https://www.instagram.com/jerry.yenque/" target="_blank"
+            class="copyright-link">J.
+            Yenque</a>, <a href="https://www.instagram.com/jhonny8527/" target="_blank" class="copyright-link"> J.
+            Manrique</a>.
+          Derechos Reservados.
         </p>
       </div>
-
     </div>
   </footer>
 
@@ -800,12 +917,12 @@
     - custom js link
   -->
   <script src="../js/gallery.js" defer></script>
-  <script src="../js/flickity.pkgd.min.js"></script>
+
   <!--
     - flickity js
   -->
-  <!-- <script src="./assets/js/flickity.pkgd.min.js"></script> -->
-  
+  <script src="../js/flickity.pkgd.min.js"></script>
+
   <!-- 
     - ionicon link
   -->
